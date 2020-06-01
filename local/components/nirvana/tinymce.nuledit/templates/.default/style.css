@@ -1,0 +1,75 @@
+.form-redactor textarea {
+	display:none;
+}
+.mce-tinymce.redactordiscussion {
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+}
+.redactordiscussion {
+    width: 99.5% !important;
+    margin: 0 auto !important;
+}
+.redactordiscussion > .mce-container-body {
+	padding: 2px !important;
+    background: #e2e2e2 !important;
+}
+.redactordiscussion, .redactordiscussion .mce-panel{
+	border:none !important;
+}
+.redactordiscussion .mce-flow-layout {
+    background: #e2e2e2 !important;
+    padding: 10px 5px 10px 5px !important;
+}
+.redactordiscussion .mce-top-part::before{
+    content: unset !important;
+    box-shadow: unset !important;
+	
+}
+.redactordiscussion .mce-panel .mce-btn button {
+	padding:0px !important;
+}
+.redactordiscussion .mce-panel .mce-btn{
+	display: inline-block;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 15px 9px 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    text-decoration: none;
+    zoom: 1;
+    position: relative;
+    color: rgba(0, 0, 0, 0.85);
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.22);
+    margin-right: 5px;
+	margin-left: 0px !important;
+}
+.redactordiscussion .mce-panel .mce-btn:hover {
+	outline: none;
+    background: #449aef;
+}
+.redactordiscussion .mce-panel .mce-btn:hover button,
+.redactordiscussion .mce-panel .mce-btn:hover button i
+{
+    color: #fff !important;
+}	
+.redactordiscussion .mce-panel .mce-btn.mce-active{
+    background: #449aef;
+}
+
+
+@media (max-width: 992px) {
+#mceu_12-body {text-align:center;}	
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset {
+	    white-space: unset !important;
+}
+.redactordiscussion .mce-panel .mce-btn{
+	margin-top: 5px;
+}
+
+}

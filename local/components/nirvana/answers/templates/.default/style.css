@@ -1,0 +1,158 @@
+#questions .form-control{
+height: auto !important;
+}
+
+.answers{
+    margin-bottom: 15px;
+}
+.lists {
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #0d5b90;
+}
+.answer {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 999999999;
+    text-align: center;
+    line-height: 40px;
+}
+.answer.done{
+    background: #0B690B;
+    color: white;
+}
+.answer.error{
+    background: crimson;
+    color: white;
+}
+.answ{
+    /*border-right: 1px dotted;*/
+}
+.viewed {
+    border: 1px dotted;
+    padding: 5px;
+}
+.viewed img{
+    width: 200px;
+}
+
+.text .quote {
+    border-left: 2px solid #0000ff54;
+    background: #87cefa38;
+    padding: 5px 5px 5px 10px;
+}
+
+.userAutorRow > div {
+    display: inline-block;
+}
+
+.UrlPhoto {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-size: cover;
+    margin-right: 10px;
+    float: left;
+}
+
+.trueedit {
+    padding: 5px;
+    /*border: 3px solid #ffb900;*/
+    outline: none;
+    background: white;
+}
+
+.trueedit .wysiwyg_smile {
+    width: auto;
+}
+
+.trueedit .wysiwyg_emoji {
+    width: 20px;
+    height: 20px;
+}
+
+.hidden-content .closebtn {
+    text-align: center;
+}
+
+.btn.green {
+    background: green;
+    color: white;
+}
+
+.btn.red {
+    background: red;
+    color: white;
+}
+
+.info_comm {
+    border: 3px dotted #11ce1a !important;
+    padding: 7px !important;
+}
+
+.list_info_comment{
+    font-size: 11px;
+    border: none!important;
+}
+.list_info_comment a strong {
+    color: #3554ff;
+}
+
+.info_comment {
+    border: 3px dotted #ce7c11;
+    padding: 7px;
+}
+
+.info_comment h3 {
+    margin: 0;
+}
+
+.info_comment p {
+    margin: 10px 0 0 0;
+}
+
+.btn-control-ed {
+    margin: 12px 0 12px 0;
+}
+
+.btn-control-ed .btn {
+    margin: 0 8px 0 8px;
+    letter-spacing: 2px;
+}
+
+.btn-control-ed .btn.red {
+    background: #ec9001;
+}
+
+.btn-control-ed .btn.green {
+    background: #0372ff;
+}
+
+.control-elm .btn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+}
+
+.control-elm .btn:hover{
+    background: #525252;
+    color: white;
+}
+
+.btnred{
+    background: #d89d00;
+    color: #fff;
+}
+/*
+.pages{
+    display: none;
+}*/

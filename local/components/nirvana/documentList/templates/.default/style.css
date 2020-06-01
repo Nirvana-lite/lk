@@ -1,0 +1,43 @@
+.block-shadow {
+    background: #ffffff;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    box-shadow: 0 5px 5px -5px #717171;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.elem{
+    font-family: Lora, serif;
+    overflow: hidden;
+    border-top: 2px solid #0d5b90 !important;
+    padding: 10px 15px;
+    border-right: 1px solid #e2e2e2;
+    box-shadow: 0 5px 5px -5px #717171;
+    margin-bottom: 24px;
+    background: white;
+}
+.elem a{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #0d5b90;
+    float: right;
+}
+.elem .text{
+    color: #0d5b90;
+    font-size: 110%;
+}
+
+#section_select {
+    padding: 7px;
+    font: 400 18px Lora, serif !important;
+    width: 100% !important;
+    outline: none;
+    background-color: #fff;
+    display: block !important;
+    cursor: pointer;
+}

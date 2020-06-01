@@ -1,0 +1,28 @@
+.articles{
+    background: white;
+    margin-bottom: 5px;
+}
+.articles img{
+    width: 120px;
+    height: 120px;
+    display: grid;
+    margin: 0 auto;
+    box-shadow: 0 0 1px #545454;
+}
+.articles .article {
+    padding: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+}
+.article h3 {
+    margin: 0;
+    padding-bottom: 7px;
+    color: #0d5b90;
+}
+.articles .article:last-child{
+    border-bottom: none;
+}
+.articles .article a.detail_link {
+    text-align: end;
+}

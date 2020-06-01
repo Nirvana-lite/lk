@@ -1,0 +1,72 @@
+.list_razdel_btn, form.add_section{padding-top: 15px; padding-bottom: 15px;}
+.list_razdel_btn{
+    display: grid;
+    grid-template-columns: repeat( 4, minmax(200px, 1fr) );
+    grid-gap: .5em;
+}
+.list_razdel_btn a{
+    border: 1px solid royalblue;
+}
+.razdel_btn{ margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    word-wrap: break-word !important;
+    white-space: normal !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.messages{display: none;}
+.messages.error{color:red;}
+.messages.success{color:green;}
+
+
+
+.block_views{
+    display: flex;
+}
+.right_block{
+    margin-left: 20px;
+}
+ul.spisok_deistv {
+    list-style-type: none;
+    padding: 0px;
+}
+.spisok_deistv li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.spisok_deistv li a {
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    display: block;
+    background: #f1a633;
+    color: black;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+.question {
+    border: 1px solid royalblue;
+    margin: 5px 25px 5px 0;
+    padding: 3px;
+}
+hr {
+    margin-top: 5px !important;
+    height: 10px;
+    background: black;
+    font-weight: bold;
+    margin-bottom: 5px !important;
+}
+form.ok {
+    display: inline-block;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group button.btn {
+    border: 1px solid blue;
+}
+textarea#description-section {
+    height: 200px;
+}

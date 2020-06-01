@@ -1,0 +1,19 @@
+.list__sudy a{
+    border: 1px solid #868585;
+    border-radius: 4px;
+    padding: 6px 10px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.hotspots-image, .hotspots-image img, .hotspots-image canvas{
+    margin:0 auto !important;
+    text-align: center;
+}
+.all_sudy ul{list-style: none; padding: 0;}
+
+@media (max-width: 768px) {
+    .hotspots-image-container{
+        display: none !important;
+    }
+}

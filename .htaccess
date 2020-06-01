@@ -1,0 +1,326 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php7.c>
+  php_flag session.use_trans_sid off
+  #php_value display_errors 1 
+  #php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+#php_value auto_prepend_file "/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/security/tools/start.php"
+#редирект на без www
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+RewriteRule ^(.*)$ http://%1/$1/ [R=301,L]
+
+RewriteCond %{QUERY_STRING} ^PAGEN_1=1$
+RewriteRule ^(.*)$ https://jur24pro.ru/$1? [R=301,L]
+
+
+# Редирект с index.php (html,htm) на главную страницу
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/ 
+RewriteRule ^(.*)index\.(php|html|htm)$ $1 [R=301,L]
+
+
+# убираем female_views
+RewriteCond %{REQUEST_URI} ^/female_views/(.+)/(.*)/$ [NC]
+RewriteRule ^(.*)$ https://chigiri.ru/%2/ [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/female_views/(.*)$ 
+RewriteRule ^(.*)$ https://chigiri.ru/%1/ [R=301,L]
+
+
+
+# robots.txt
+RewriteCond %{REQUEST_FILENAME} robots.txt$
+RewriteRule ^([^/]+) $1 [L]
+
+#добавляет слэш в конец
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1/ [R=301,L]
+
+RewriteCond %{THE_REQUEST} //
+# Проверяем, повторяется ли слеш (//) более двух раз.
+RewriteRule .* /$0 [R=301,L]
+
+# index php в разделах редирект с внутренних /index.php
+RewriteCond %{THE_REQUEST} /(.*)index.php.*$
+RewriteCond %{THE_REQUEST} !bitrix/admin/
+RewriteCond %{THE_REQUEST} !bitrix/components/myredactor/editor.tiny.mce/
+RewriteCond %{THE_REQUEST} !local/components/componentmanager/editor.tiny.mce/
+RewriteCond %{THE_REQUEST} !sxd/
+RewriteRule .* /%1 [R=301,L]
+
+# Заменить все .htm файлы на .html файлы
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)\.htm$ $1.html [R=301,L]
+
+#убирает .html со всех урлов
+#RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/+([^.]+)\.html [NC]
+#RewriteRule ^ /%1/ [R=301,L]
+
+
+#Блокируем все ссылки, содержащие <script>
+#RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
+#Блокируем все скрипты, которые пытаются изменить переменные PHP Globals:
+#RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+#Блокируем все скрипты, которые пытаются изменить переменную _REQUEST:
+#RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+#Перенаправляем все подобные на страницу с ошибкой 403 — запрещено
+#RewriteRule ^(.*)$ index.php [F,L]
+
+
+RewriteCond %{HTTP_USER_AGENT} SemrushBot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} AhrefsBot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} AhrefsBot/5.2
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} MJ12bot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} MauiBot 
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} Riddler
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} aiHitBot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} trovitBot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} Detectify
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} BLEXBot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} LinkpadBot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} dotbot
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} DotBot/1.1
+RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} FlipboardProxy
+RewriteRule (.*) - [F,L]
+# RewriteCond %{HTTP_USER_AGENT} bingbot
+# RewriteRule (.*) - [F,L]
+# RewriteCond %{HTTP_USER_AGENT} bingbot/2.0
+# RewriteRule (.*) - [F,L]
+RewriteCond %{HTTP_USER_AGENT} SemrushBot/2~bl
+RewriteRule (.*) - [F,L]
+# RewriteCond %{HTTP_USER_AGENT} Mail.RU_Bot/2.0
+# RewriteRule (.*) - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} seo2
+RewriteRule (.*) - [F,L]
+
+RewriteCond %{HTTP_USER_AGENT} trendiction
+RewriteRule (.*) - [F,L]
+
+RewriteCond %{HTTP_REFERER} ^https?://(www\.)?((semalt|crawler)\.)?semalt\.com [NC]
+RewriteRule .* - [F,L]
+
+
+# Не применяем к админке, иначе перестает работать страница Highload-блоки
+#RewriteCond %{REQUEST_URI} !/bitrix/admin/.* [NC]
+#RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NC,L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-l 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$ 
+RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L] 
+RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php
+</IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 7 days"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/html "access plus 7 day"
+ExpiresByType text/x-javascript "access 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+</IfModule>
+
+
+<IfModule mod_mime.c>
+AddType text/css .css
+AddType text/x-component .htc
+AddType application/x-javascript .js
+AddType application/javascript .js2
+AddType text/javascript .js3
+AddType text/x-js .js4
+AddType video/asf .asf .asx .wax .wmv .wmx
+AddType video/avi .avi
+AddType image/bmp .bmp
+AddType application/java .class
+AddType video/divx .divx
+AddType application/msword .doc .docx
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-msdownload .exe
+AddType image/gif .gif
+AddType application/x-gzip .gz .gzip
+AddType image/x-icon .ico
+AddType image/jpeg .jpg .jpeg .jpe
+AddType application/json .json
+AddType application/vnd.ms-access .mdb
+AddType audio/midi .mid .midi
+AddType video/quicktime .mov .qt
+AddType audio/mpeg .mp3 .m4a
+AddType video/mp4 .mp4 .m4v
+AddType video/mpeg .mpeg .mpg .mpe
+AddType application/vnd.ms-project .mpp
+AddType application/x-font-otf .otf
+AddType application/vnd.ms-opentype .otf
+AddType application/vnd.oasis.opendocument.database .odb
+AddType application/vnd.oasis.opendocument.chart .odc
+AddType application/vnd.oasis.opendocument.formula .odf
+AddType application/vnd.oasis.opendocument.graphics .odg
+AddType application/vnd.oasis.opendocument.presentation .odp
+AddType application/vnd.oasis.opendocument.spreadsheet .ods
+AddType application/vnd.oasis.opendocument.text .odt
+AddType audio/ogg .ogg
+AddType application/pdf .pdf
+AddType image/png .png
+AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+AddType audio/x-realaudio .ra .ram
+AddType image/svg+xml .svg .svgz
+AddType application/x-shockwave-flash .swf
+AddType application/x-tar .tar
+AddType image/tiff .tif .tiff
+AddType application/x-font-ttf .ttf .ttc
+AddType application/vnd.ms-opentype .ttf .ttc
+AddType audio/wav .wav
+AddType audio/wma .wma
+AddType application/vnd.ms-write .wri
+AddType application/font-woff .woff
+AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css A86400
+ExpiresByType text/x-component A86400
+ExpiresByType application/x-javascript A86400
+ExpiresByType application/javascript A86400
+ExpiresByType text/javascript A86400
+ExpiresByType text/x-js A86400
+ExpiresByType video/asf A604800
+ExpiresByType video/avi A604800
+ExpiresByType image/bmp A604800
+ExpiresByType application/java A604800
+ExpiresByType video/divx A604800
+ExpiresByType application/msword A604800
+ExpiresByType application/vnd.ms-fontobject A604800
+ExpiresByType application/x-msdownload A604800
+ExpiresByType image/gif A604800
+ExpiresByType application/x-gzip A604800
+ExpiresByType image/x-icon A604800
+ExpiresByType image/jpeg A604800
+ExpiresByType application/json A604800
+ExpiresByType application/vnd.ms-access A604800
+ExpiresByType audio/midi A604800
+ExpiresByType video/quicktime A604800
+ExpiresByType audio/mpeg A604800
+ExpiresByType video/mp4 A604800
+ExpiresByType video/mpeg A604800
+ExpiresByType application/vnd.ms-project A604800
+ExpiresByType application/x-font-otf A604800
+ExpiresByType application/vnd.ms-opentype A604800
+ExpiresByType application/vnd.oasis.opendocument.database A604800
+ExpiresByType application/vnd.oasis.opendocument.chart A604800
+ExpiresByType application/vnd.oasis.opendocument.formula A604800
+ExpiresByType application/vnd.oasis.opendocument.graphics A604800
+ExpiresByType application/vnd.oasis.opendocument.presentation A604800
+ExpiresByType application/vnd.oasis.opendocument.spreadsheet A604800
+ExpiresByType application/vnd.oasis.opendocument.text A604800
+ExpiresByType audio/ogg A604800
+ExpiresByType application/pdf A604800
+ExpiresByType image/png A604800
+ExpiresByType application/vnd.ms-powerpoint A604800
+ExpiresByType audio/x-realaudio A604800
+ExpiresByType image/svg+xml A604800
+ExpiresByType application/x-shockwave-flash A604800
+ExpiresByType application/x-tar A604800
+ExpiresByType image/tiff A604800
+ExpiresByType application/x-font-ttf A604800
+ExpiresByType application/vnd.ms-opentype A604800
+ExpiresByType audio/wav A604800
+ExpiresByType audio/wma A604800
+ExpiresByType application/vnd.ms-write A604800
+ExpiresByType application/font-woff A604800
+ExpiresByType application/vnd.ms-excel A604800
+ExpiresByType application/zip A604800
+</IfModule>
+<FilesMatch \.(css|htc|less|png|js|js2|js3|js4|CSS|HTC|LESS|JS|JS2|JS3|JS4)$>
+FileETag MTime Size
+<IfModule mod_headers.c>
+Header set X-XSS-Protection "1; mode=block"
+Header set Pragma "public"
+Header append Cache-Control "public"
+</IfModule>
+</FilesMatch>
+<FilesMatch \.(html|htm|rtf|rtx|svg|svgz|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|SVGZ|TXT|XSD|XSL|XML)$>
+FileETag MTime Size
+<IfModule mod_headers.c>
+Header set Pragma "no-cache"
+Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate"
+</IfModule>
+</FilesMatch>
+<FilesMatch \.(asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|png|jpg|jpeg|jpe|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|wav|wma|wri|woff|xla|xls|xlsx|xlt|xlw|zip|ASF|ASX|WAX|WMV|WMX|AVI|BMP|CLASS|DIVX|DOC|DOCX|EOT|EXE|GIF|GZ|GZIP|ICO|JPG|JPEG|JPE|JSON|MDB|MID|MIDI|MOV|QT|MP3|M4A|MP4|M4V|MPEG|MPG|MPE|MPP|OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|PNG|POT|PPS|PPT|PPTX|RA|RAM|SVG|SVGZ|SWF|TAR|TIF|TIFF|TTF|TTC|WAV|WMA|WRI|WOFF|XLA|XLS|XLSX|XLT|XLW|ZIP)$>
+FileETag MTime Size
+<IfModule mod_headers.c>
+Header set Pragma "public"
+Header append Cache-Control "public"
+</IfModule>
+</FilesMatch>
+
+<ifModule mod_headers.c>
+<FilesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=43200"
+</FilesMatch>
+<FilesMatch "\.(js|css|txt)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+<FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+Header unset Cache-Control
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+   RemoveHandler .php .php3 .php4 .php5 .php6 .phtml .pl .asp .aspx .cgi .exe .ico
+   AddType text/plain .php .php3 .php4 .php5 .php6 .phtml .pl .asp .aspx .cgi .exe .ico
+</IfModule> 
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    SetOutputFilter DEFLATE
+</IfModule>

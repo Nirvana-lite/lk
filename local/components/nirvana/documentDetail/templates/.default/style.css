@@ -1,0 +1,131 @@
+.detail {
+    position: relative;
+    margin: 0;
+    padding: 100px 80px;
+    border: 1px solid #CCD1D9;
+    background-color: #fff;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 24px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 25px #CCD1D9;
+}
+
+.detail h2 {
+    margin: 0 0 100px 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.detail strong {
+    display: block;
+    margin: -80px 100px 100px;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+.detail .city {
+    float: left;
+    margin: 0 0 70px 0;
+    font-style: italic;
+    color: #656D78;
+    font-size: 14px;
+}
+
+.detail .city span {
+    width: 200px;
+    display: inline-block;
+    border-bottom: 1px dotted #656D78;
+}
+
+.detail .date {
+    float: right;
+    margin: 0 0 70px 0;
+    font-style: italic;
+    color: #656D78;
+    font-size: 14px;
+}
+.date span {
+    display: inline-block;
+    border-bottom: 1px dotted #656D78;
+}
+
+.detail .clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.detail .i200, .detail .i100, .detail .i80, .detail .i50, .detail .i20 {
+    width: 310px;
+    display: inline-block;
+    border-bottom: 1px dotted #656D78;
+}
+
+.detail .i50 {
+    width: 90px;
+}
+
+.detail .i100 {
+    width: 160px;
+}
+
+.detail b {
+    font-weight: bold;
+}
+
+.detail h3 {
+    margin: 60px 0 25px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.detail .requirements {
+    margin: 30px 0 10px;
+}
+
+.detail .requirements .first {
+    float: left;
+    width: 48%;
+}
+.detail .requirements span {
+    display: block;
+    border-bottom: 1px dotted #656D78;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.detail .requirements .second {
+    float: right;
+    width: 48%;
+}
+
+.detail .signature {
+    margin-top: 30px;
+}
+
+.detail .signature .first {
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.detail .signature .second {
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.detail .attention {
+    margin: 20px 10% 0;
+}

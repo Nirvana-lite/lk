@@ -1,0 +1,22 @@
+p.blk {
+    display: block;
+    width: 100%;
+}
+.form-control {
+    height: auto !important;
+}
+.form_adv{
+    background: white;
+    position: relative;
+    /*padding: 10px;*/
+    box-shadow: 0 0 3px #007bff;
+}
+.left_block{
+    height: 400px;
+}
+.img_left{
+    /*width: 460px;*/
+    display: block;
+    position: absolute;
+    bottom: 0;
+}

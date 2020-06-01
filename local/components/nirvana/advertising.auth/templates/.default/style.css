@@ -1,0 +1,10 @@
+.act{
+    font-weight: bold;
+}
+#regForm h4{
+    cursor: pointer;
+    color: #4a74c1;
+}
+#regForm label{
+    /*color: 4a74c1;*/
+}

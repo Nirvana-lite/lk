@@ -1,0 +1,368 @@
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 17:35:26
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 17:39:21
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 17:47:52
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 18:02:24
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 18:08:48
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:395
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 18:14:28
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:395
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 18:18:19
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 18:50:30
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-13 20:27:29
+Module: log_array
+Array
+(
+    [user_conf] => F
+    [admin_conf] => F
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 10:41:58
+Module: log_array
+Array
+(
+    [user_conf] => F
+    [admin_conf] => F
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 12:07:27
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 12:10:25
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 12:13:51
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 13:37:36
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 13:39:17
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 14:27:35
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 14:47:30
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 14:55:23
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:232
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 16:31:45
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:234
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 16:46:26
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:235
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 16:54:05
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:235
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 16:59:40
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:235
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: s155365.hostiman.com:80
+Date: 2020-02-14 17:35:08
+Module: log_array
+Array
+(
+    [user_conf] => Y
+    [admin_conf] => Y
+)
+
+    log_array < OnAfterUserRegisterHandler < ExecuteModuleEventEx < include < CBitrixComponent::__includeComponent
+	/home/bitrix/www/local/php_interface/init.php:394
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/module.php:475
+	/home/bitrix/www/local/components/mycomponents/main.register/component.php:235
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------

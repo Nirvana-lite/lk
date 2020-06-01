@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+div#questionTab {
+    font: normal 15px/1.5 Helvetica, sans-serif;
+}
+
+.hideMore{
+    display: none;
+}
+
+.tab-title {
+    background: #e1e7f0; /* Цвет фона */
+    padding: 5px 10px; /* Поля вокруг текста */
+    border: 1px solid #666; /* Параметры рамки */
+    border-bottom: none; /* Снизу линию убираем */
+}
+.tab-content {
+    padding: 10px;
+}
+.tabs .tab {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+    margin: 0 5px 10px;
+    border: 1px solid #0d5b91;
+    font-size: 110%;
+}
+.tabs .tab:hover {
+    background: #0d5b91;
+    color: white;
+}
+.tabs .tab.viewed {
+    background: #0d5b91;
+    color: white;
+}
+
+
+.item {
+    display: grid;
+    background: white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.prev_info .left_block .inf_check {
+    border-bottom: 1px solid #0d5b91;
+    font-size: 90%;
+}
+
+.prev_info .inf {
+    grid-template-columns: 4fr 3fr 3fr 2fr;
+    grid-gap: 2vw;
+    display: grid;
+}
+.inf_check {
+    display: inline-block;
+}
+.inf_check span, .count span{
+    font-size: 80%;
+    color: gray;
+}
+.detail_button {
+    text-align: center;
+    border: 1px solid #0d5b91;
+    cursor: pointer;
+}
+.item .detail_info {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+}
+.item .detail_info .info{
+    font-size: 80%;
+    color: gray;
+}
+.item .media-text {
+    margin: 8px 0;
+}

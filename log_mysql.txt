@@ -1,0 +1,2176 @@
+Host: 
+Date: 2020-03-06 22:26:02
+Module: agentExecute
+Add agent
+    CWebdokaCacheAgent::agentExecute < eval < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php(161) : eval()'d code:1
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:161
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-06 23:06:02
+Module: agentExecute
+Add agent
+    CWebdokaCacheAgent::agentExecute < eval < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php(161) : eval()'d code:1
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:161
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:09:02
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php<br> LINE: 782 MySql Query Error: 
+				SELECT  BE.ID as ID
+				FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			
+		
+				WHERE 1=1 
+			AND (
+			
+				(EXISTS (
+						SELECT IBLOCK_ID FROM b_iblock_site WHERE IBLOCK_ID = B.ID
+						AND (((SITE_ID='s1')))
+					))
+				AND ((((B.ACTIVE='Y'))))
+				AND ((((BE.ACTIVE='Y'))))
+				AND ((((B.IBLOCK_TYPE_ID LIKE 'kpkMfoStr'))))
+				AND ((((BE.IBLOCK_ID = '35'))))
+				AND ((((BE.CODE = 'obshchestvo-s-ogranichennoy-otvetstvennostyu-pomoshch-186570'))))
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+			AND ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT ER.ELEMENT_ID
+				FROM b_iblock_element_right ER
+				INNER JOIN b_iblock_right IBR ON IBR.ID = ER.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE ER.ELEMENT_ID = BE.ID
+				AND IBR.OP_EREAD = 'Y'
+				
+			))
+			))
+				
+				
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < CIBlockFindTools::GetElementID < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:782
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/comp_findtools.php:25
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/components/bitrix/news.detail/component.php:167
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:09:55
+Module: main
+ MySql Query Error: 
+			SELECT BP.*, BEP.ID as PROPERTY_VALUE_ID, BEP.VALUE, BEP.DESCRIPTION, BEPE.VALUE VALUE_ENUM, BEPE.XML_ID VALUE_XML_ID, BEPE.SORT VALUE_SORT
+			FROM b_iblock B
+				INNER JOIN b_iblock_property BP ON B.ID=BP.IBLOCK_ID
+				LEFT JOIN b_iblock_element_property BEP ON (BP.ID = BEP.IBLOCK_PROPERTY_ID AND BEP.IBLOCK_ELEMENT_ID = 199029)
+				LEFT JOIN b_iblock_property_enum BEPE ON (BP.PROPERTY_TYPE = 'L' AND BEPE.ID=BEP.VALUE_ENUM AND BEPE.PROPERTY_ID=BP.ID)
+			WHERE B.ID = 17
+				AND BP.ACTIVE='Y'
+
+			 ORDER BY  BP.SORT asc, BP.ID asc, BEPE.SORT asc, BEP.ID asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockElement::GetProperty < _CIBElement::GetProperties < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:5958
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblock_element.php:171
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/news.detail/component.php:311
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:09:55
+Module: main
+ MySql Query Error: 
+			SELECT BP.*
+			FROM
+				b_iblock_property BP
+				,b_iblock B
+			WHERE BP.IBLOCK_ID=B.ID
+			 AND B.ID IN (23) 
+			AND UPPER(BP.CODE)='OP' [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockProperty::GetPropertyArray < CAllIBlockElement::MkFilter < CAllIBlockElement::PrepareGetList < CIBlockElement::prepareSql
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockproperty.php:679
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:1217
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:3052
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:339
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:641
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:09:55
+Module: main
+ MySql Query Error: 
+			SELECT BP.*
+			FROM
+				b_iblock_property BP
+				,b_iblock B
+			WHERE BP.IBLOCK_ID=B.ID
+			 AND B.ID IN (23) 
+			AND UPPER(BP.CODE)='OP' [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockProperty::GetPropertyArray < CAllIBlockElement::MkFilter < CAllIBlockElement::PrepareGetList < CIBlockElement::prepareSql
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockproperty.php:679
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:1217
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:3052
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:339
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:641
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:10:54
+Module: main
+ MySql Query Error: 
+					SELECT  BE.ID as ID,DATE_FORMAT(BE.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,B.DETAIL_PAGE_URL as DETAIL_PAGE_URL,L.DIR as LANG_DIR,BE.CODE as CODE,BE.XML_ID as EXTERNAL_ID,BE.IBLOCK_SECTION_ID as IBLOCK_SECTION_ID,B.IBLOCK_TYPE_ID as IBLOCK_TYPE_ID,BE.IBLOCK_ID as IBLOCK_ID,B.CODE as IBLOCK_CODE,B.XML_ID as IBLOCK_EXTERNAL_ID,B.LID as LID
+					FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			
+		
+					WHERE 1=1 
+			AND (
+			
+				((((BE.IBLOCK_ID = '33'))))
+				AND ((((BE.ACTIVE='Y'))))
+				AND ((((BE.ID > '92576'))))
+				AND (EXISTS (
+						SELECT IBLOCK_ID FROM b_iblock_site WHERE IBLOCK_ID = B.ID
+						AND (((SITE_ID='s1')))
+					))
+				AND (BE.IN_SECTIONS='N')
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+					
+					 ORDER BY BE.ID asc 
+					LIMIT 1000
+				 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < require
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:670
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/seo/admin/seo_sitemap_run.php:466
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/admin/seo_sitemap_run.php:1
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:21:04
+Module: main
+ MySql Query Error: 
+			select BS.ID
+			from 
+					b_iblock_section BS
+				
+			WHERE BS.IBLOCK_ID = 21
+			
+					AND BS.CODE = 'sroki-ispolnitelnogo-proizvodstva-u-pristavov-po-ispolnitelnomu-listu-286157'
+				
+			AND BS.IBLOCK_SECTION_ID IS NULL
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockFindTools::checkSection < CIBlockFindTools::resolveComponentEngine < CComponentEngine::guessComponentPath < include
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/comp_findtools.php:248
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/comp_findtools.php:121
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component_engine.php:268
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/catalog/component.php:69
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:21:04
+Module: main
+ MySql Query Error: UPDATE b_iblock_element SET 	TIMESTAMP_X = TIMESTAMP_X, 	SHOW_COUNTER_START = ifnull(SHOW_COUNTER_START, now()), 	SHOW_COUNTER =  ifnull(SHOW_COUNTER, 0) + 1 WHERE ID=269744 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockElement::CounterInc < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:5980
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/news.detail/component.php:458
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/main.php:1035
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:21:04
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php<br> LINE: 782 MySql Query Error: 
+				SELECT  BE.ID as ID
+				FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			
+		
+				WHERE 1=1 
+			AND (
+			
+				((((BE.CODE = 'grazhdanskoe-delo-2-4173-2017-m-3461-2017'))))
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+				
+				
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < CIBlockFindTools::GetElementID < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:782
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/comp_findtools.php:25
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/reshenie_sudov.detail/component.php:47
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:21:04
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php<br> LINE: 782 MySql Query Error: 
+				SELECT  BE.ID as ID
+				FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			
+		
+				WHERE 1=1 
+			AND (
+			
+				((((BE.CODE = 'grazhdanskoe-delo-33-16786-2017'))))
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+				
+				
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < CIBlockFindTools::GetElementID < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:782
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/comp_findtools.php:25
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/reshenie_sudov.detail/component.php:47
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-09 20:21:04
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php<br> LINE: 782 MySql Query Error: 
+				SELECT  BE.ID as ID
+				FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			
+		
+				WHERE 1=1 
+			AND (
+			
+				((((BE.CODE = 'grazhdanskoe-delo-2-2151-2017-m-2528-2017'))))
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+				
+				
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < CIBlockFindTools::GetElementID < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:782
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/comp_findtools.php:25
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/reshenie_sudov.detail/component.php:47
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-10 10:31:24
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require_once
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog.php:10
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-10 10:31:24
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require_once
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog.php:10
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-10 10:31:24
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require_once
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog.php:10
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-10 10:31:24
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require_once
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog.php:10
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-10 10:31:24
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require_once
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog.php:10
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-10 10:31:24
+Module: main
+ MySql Query Error: 
+			SELECT BP.*
+			FROM
+				b_iblock_property BP
+				,b_iblock B
+			WHERE BP.IBLOCK_ID=B.ID
+			 AND B.CODE IN ('kaycom_ONEPLACESEO') 
+			AND UPPER(BP.CODE)='TITLE' [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockProperty::GetPropertyArray < CAllIBlockElement::PrepareGetList < CIBlockElement::prepareSql < CIBlockElement::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockproperty.php:679
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:2925
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:339
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:641
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/kaycom.oneplaceseo/include.php:75
+----------
+Host: 
+Date: 2020-03-11 10:57:04
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: 
+Date: 2020-03-11 10:57:04
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-11 10:57:04
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/main.register/component.php:68
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/main.php:1035
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-11 12:55:05
+Module: main
+ MySql Query Error: 
+					SELECT DISTINCT BE.CODE as CODE,BE.PREVIEW_TEXT as PREVIEW_TEXT,IF(EXTRACT(HOUR_SECOND FROM BE.ACTIVE_FROM)>0, DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y %H:%i:%s'), DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y')) as DATE_ACTIVE_FROM,IF(EXTRACT(HOUR_SECOND FROM BE.ACTIVE_FROM)>0, DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y %H:%i:%s'), DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y')) as ACTIVE_FROM,DATE_FORMAT(BE.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE,BE.ID as ID,BE.IBLOCK_ID as IBLOCK_ID,BE.IBLOCK_SECTION_ID as IBLOCK_SECTION_ID,BE.NAME as NAME,DATE_FORMAT(BE.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,B.DETAIL_PAGE_URL as DETAIL_PAGE_URL,B.LIST_PAGE_URL as LIST_PAGE_URL,BE.DETAIL_TEXT as DETAIL_TEXT,BE.DETAIL_TEXT_TYPE as DETAIL_TEXT_TYPE,BE.PREVIEW_TEXT_TYPE as PREVIEW_TEXT_TYPE,BE.PREVIEW_PICTURE as PREVIEW_PICTURE, FPS0.*,L.DIR as LANG_DIR,BE.SORT as SORT,BE.XML_ID as EXTERNAL_ID,B.IBLOCK_TYPE_ID as IBLOCK_TYPE_ID,B.CODE as IBLOCK_CODE,B.XML_ID as IBLOCK_EXTERNAL_ID,B.LID as LID
+					FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			INNER JOIN b_iblock_element_prop_s15 FPS0 ON FPS0.IBLOCK_ELEMENT_ID = BE.ID
+
+		
+					WHERE 1=1 
+			AND (
+			
+				((((BE.IBLOCK_ID = '15'))))
+				AND (EXISTS (
+						SELECT IBLOCK_ID FROM b_iblock_site WHERE IBLOCK_ID = B.ID
+						AND (((SITE_ID='s1')))
+					))
+				AND ((((BE.ACTIVE='Y'))))
+				AND (((BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL) AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL)))
+				AND ((( BE.ID IS NULL OR NOT (BE.ID = '660'))))
+				AND (
+				
+					(
+					
+						(
+						
+							((((BE.PREVIEW_TEXT LIKE '%Доброго%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%времени%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%суток%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%Очень%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%интересует%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%вопрос%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%мы%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%попали%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%такую%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%ситу%'))))
+						)
+					)
+				)
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+			AND ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT ER.ELEMENT_ID
+				FROM b_iblock_element_right ER
+				INNER JOIN b_iblock_right IBR ON IBR.ID = ER.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE ER.ELEMENT_ID = BE.ID
+				AND IBR.OP_EREAD = 'Y'
+				
+			))
+			))
+					
+					 ORDER BY BE.SORT asc ,BE.ACTIVE_FROM desc ,BE.ID desc 
+				 LIMIT 120, 20 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDBResultMysql::NavQuery < CIBlockElement::GetList < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:954
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:770
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/news.list/component.php:301
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-11 12:55:05
+Module: main
+ MySql Query Error: 
+					SELECT DISTINCT BE.CODE as CODE,BE.PREVIEW_TEXT as PREVIEW_TEXT,IF(EXTRACT(HOUR_SECOND FROM BE.ACTIVE_FROM)>0, DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y %H:%i:%s'), DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y')) as DATE_ACTIVE_FROM,IF(EXTRACT(HOUR_SECOND FROM BE.ACTIVE_FROM)>0, DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y %H:%i:%s'), DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y')) as ACTIVE_FROM,DATE_FORMAT(BE.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE,BE.ID as ID,BE.IBLOCK_ID as IBLOCK_ID,BE.IBLOCK_SECTION_ID as IBLOCK_SECTION_ID,BE.NAME as NAME,DATE_FORMAT(BE.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,B.DETAIL_PAGE_URL as DETAIL_PAGE_URL,B.LIST_PAGE_URL as LIST_PAGE_URL,BE.DETAIL_TEXT as DETAIL_TEXT,BE.DETAIL_TEXT_TYPE as DETAIL_TEXT_TYPE,BE.PREVIEW_TEXT_TYPE as PREVIEW_TEXT_TYPE,BE.PREVIEW_PICTURE as PREVIEW_PICTURE, FPS0.*,L.DIR as LANG_DIR,BE.SORT as SORT,BE.XML_ID as EXTERNAL_ID,B.IBLOCK_TYPE_ID as IBLOCK_TYPE_ID,B.CODE as IBLOCK_CODE,B.XML_ID as IBLOCK_EXTERNAL_ID,B.LID as LID
+					FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			INNER JOIN b_iblock_element_prop_s15 FPS0 ON FPS0.IBLOCK_ELEMENT_ID = BE.ID
+
+		
+					WHERE 1=1 
+			AND (
+			
+				((((BE.IBLOCK_ID = '15'))))
+				AND (EXISTS (
+						SELECT IBLOCK_ID FROM b_iblock_site WHERE IBLOCK_ID = B.ID
+						AND (((SITE_ID='s1')))
+					))
+				AND ((((BE.ACTIVE='Y'))))
+				AND (((BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL) AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL)))
+				AND ((( BE.ID IS NULL OR NOT (BE.ID = '19969'))))
+				AND (
+				
+					(
+					
+						(
+						
+							((((BE.PREVIEW_TEXT LIKE '%Здраствуйте%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%подскажите%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%такая%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%ситуацыя%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%Мы%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%женой%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%жив%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%поселке%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%ква%'))))
+						)
+					)
+				)
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+			AND ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT ER.ELEMENT_ID
+				FROM b_iblock_element_right ER
+				INNER JOIN b_iblock_right IBR ON IBR.ID = ER.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE ER.ELEMENT_ID = BE.ID
+				AND IBR.OP_EREAD = 'Y'
+				
+			))
+			))
+					
+					 ORDER BY BE.SORT asc ,BE.ACTIVE_FROM desc ,BE.ID desc 
+				 LIMIT 120, 20 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDBResultMysql::NavQuery < CIBlockElement::GetList < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:954
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:770
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/news.list/component.php:301
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-11 12:55:05
+Module: main
+ MySql Query Error: 
+						SELECT COUNT(DISTINCT BE.ID) as C
+						FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			INNER JOIN b_iblock_element_prop_s15 FPS0 ON FPS0.IBLOCK_ELEMENT_ID = BE.ID
+
+		
+						WHERE 1=1 
+			AND (
+			
+				((((BE.IBLOCK_ID = '15'))))
+				AND (EXISTS (
+						SELECT IBLOCK_ID FROM b_iblock_site WHERE IBLOCK_ID = B.ID
+						AND (((SITE_ID='s1')))
+					))
+				AND ((((BE.ACTIVE='Y'))))
+				AND (((BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL) AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL)))
+				AND ((( BE.ID IS NULL OR NOT (BE.ID = '1973'))))
+				AND (
+				
+					(
+					
+						(
+						
+							((((BE.PREVIEW_TEXT LIKE '%Запрет%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%регистрационные%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%действия%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%автомобиля%'))))
+						)
+					)
+				)
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+			AND ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT ER.ELEMENT_ID
+				FROM b_iblock_element_right ER
+				INNER JOIN b_iblock_right IBR ON IBR.ID = ER.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE ER.ELEMENT_ID = BE.ID
+				AND IBR.OP_EREAD = 'Y'
+				
+			))
+			))
+						
+					 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:746
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/news.list/component.php:301
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/main.php:1035
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-11 12:55:05
+Module: main
+ MySql Query Error: 
+					SELECT
+						BS.ID AS ID, BS.CODE AS CODE, BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID
+					FROM
+						b_iblock_section BS
+						INNER JOIN b_iblock B ON B.ID = BS.IBLOCK_ID
+					WHERE BS.ID=108
+						
+				 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockSection::GetNavChain < CAllIBlockSection::getSectionCodePath < CAllIBlock::ReplaceDetailUrl < CIBlockResult::GetNext
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblocksection.php:258
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblocksection.php:2557
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblock.php:2780
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockresult.php:339
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockresult.php:396
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-11 12:55:05
+Module: main
+ MySql Query Error: 
+					SELECT DISTINCT BE.CODE as CODE,BE.PREVIEW_TEXT as PREVIEW_TEXT,IF(EXTRACT(HOUR_SECOND FROM BE.ACTIVE_FROM)>0, DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y %H:%i:%s'), DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y')) as DATE_ACTIVE_FROM,IF(EXTRACT(HOUR_SECOND FROM BE.ACTIVE_FROM)>0, DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y %H:%i:%s'), DATE_FORMAT(BE.ACTIVE_FROM, '%d.%m.%Y')) as ACTIVE_FROM,DATE_FORMAT(BE.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE,BE.ID as ID,BE.IBLOCK_ID as IBLOCK_ID,BE.IBLOCK_SECTION_ID as IBLOCK_SECTION_ID,BE.NAME as NAME,DATE_FORMAT(BE.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,B.DETAIL_PAGE_URL as DETAIL_PAGE_URL,B.LIST_PAGE_URL as LIST_PAGE_URL,BE.DETAIL_TEXT as DETAIL_TEXT,BE.DETAIL_TEXT_TYPE as DETAIL_TEXT_TYPE,BE.PREVIEW_TEXT_TYPE as PREVIEW_TEXT_TYPE,BE.PREVIEW_PICTURE as PREVIEW_PICTURE, FPS0.*,L.DIR as LANG_DIR,BE.SORT as SORT,BE.XML_ID as EXTERNAL_ID,B.IBLOCK_TYPE_ID as IBLOCK_TYPE_ID,B.CODE as IBLOCK_CODE,B.XML_ID as IBLOCK_EXTERNAL_ID,B.LID as LID
+					FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			INNER JOIN b_iblock_element_prop_s15 FPS0 ON FPS0.IBLOCK_ELEMENT_ID = BE.ID
+
+		
+					WHERE 1=1 
+			AND (
+			
+				((((BE.IBLOCK_ID = '15'))))
+				AND (EXISTS (
+						SELECT IBLOCK_ID FROM b_iblock_site WHERE IBLOCK_ID = B.ID
+						AND (((SITE_ID='s1')))
+					))
+				AND ((((BE.ACTIVE='Y'))))
+				AND (((BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL) AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL)))
+				AND ((( BE.ID IS NULL OR NOT (BE.ID = '18953'))))
+				AND (
+				
+					(
+					
+						(
+						
+							((((BE.PREVIEW_TEXT LIKE '%Здравствуйте%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%меня%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%двое%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%детей%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%младший%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%ребенок%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%инвалид%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%своего%'))))
+						)
+						OR (
+						
+							((((BE.PREVIEW_TEXT LIKE '%жилья%'))))
+						)
+					)
+				)
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+			AND ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT ER.ELEMENT_ID
+				FROM b_iblock_element_right ER
+				INNER JOIN b_iblock_right IBR ON IBR.ID = ER.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE ER.ELEMENT_ID = BE.ID
+				AND IBR.OP_EREAD = 'Y'
+				
+			))
+			))
+					
+					 ORDER BY BE.SORT asc ,BE.ACTIVE_FROM desc ,BE.ID desc 
+				 LIMIT 120, 20 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDBResultMysql::NavQuery < CIBlockElement::GetList < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:954
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:770
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/news.list/component.php:301
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+----------
+Host: 
+Date: 2020-03-11 16:30:04
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-11 16:30:04
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: 
+Date: 2020-03-12 05:30:03
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-12 17:25:04
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-12 17:25:04
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: 
+Date: 2020-03-13 23:07:03
+Module: agentExecute
+Add agent
+    CWebdokaCacheAgent::agentExecute < eval < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php(161) : eval()'d code:1
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:161
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-14 02:14:03
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-14 02:14:03
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 02:14:03
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/main.register/component.php:68
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/main.php:1035
+----------
+Host: 
+Date: 2020-03-14 11:24:12
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 11:24:12
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require_once
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog.php:10
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 18:25:03
+Module: main
+ MySql Query Error: SELECT * FROM `b_captcha` LIMIT 0 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDatabase::GetTableFields < CDatabaseMysql::PrepareInsert < CCaptcha::Add < CCaptcha::SetCaptchaCode
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database_mysqli.php:109
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:432
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:1085
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:863
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:817
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 18:25:03
+Module: main
+ MySql Query Error: SELECT * FROM `b_captcha` LIMIT 0 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDatabase::GetTableFields < CDatabaseMysql::PrepareInsert < CCaptcha::Add < CCaptcha::SetCaptchaCode
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database_mysqli.php:109
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:432
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:1085
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:863
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:817
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 18:25:03
+Module: main
+ MySql Query Error: SELECT * FROM `b_captcha` LIMIT 0 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDatabase::GetTableFields < CDatabaseMysql::PrepareInsert < CCaptcha::Add < CCaptcha::SetCaptchaCode
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database_mysqli.php:109
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:432
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:1085
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:863
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:817
+----------
+Host: 
+Date: 2020-03-14 18:25:03
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 18:25:03
+Module: main
+ MySql Query Error: SELECT * FROM `b_captcha` LIMIT 0 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDatabase::GetTableFields < CDatabaseMysql::PrepareInsert < CCaptcha::Add < CCaptcha::SetCaptchaCode
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database_mysqli.php:109
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:432
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:1085
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:863
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:817
+----------
+Host: 
+Date: 2020-03-14 18:25:03
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-14 18:25:03
+Module: main
+ MySql Query Error: SELECT * FROM `b_captcha` LIMIT 0 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDatabase::GetTableFields < CDatabaseMysql::PrepareInsert < CCaptcha::Add < CCaptcha::SetCaptchaCode
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database_mysqli.php:109
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:432
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:1085
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:863
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:817
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-17 03:09:05
+Module: main
+ MySql Query Error: SELECT * FROM `b_captcha` LIMIT 0 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CDatabase::GetTableFields < CDatabaseMysql::PrepareInsert < CCaptcha::Add < CCaptcha::SetCaptchaCode
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database_mysqli.php:109
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/database.php:432
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:1085
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:863
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/captcha.php:817
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-17 07:50:07
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/main.register/component.php:68
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/main.php:1035
+----------
+Host: 
+Date: 2020-03-17 07:50:07
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-17 16:45:07
+Module: main
+ MySql Query Error: SELECT ID, NAME, AGENT_INTERVAL, IS_PERIOD, MODULE_ID FROM b_agent WHERE ACTIVE='Y' 	AND NEXT_EXEC<=now() 	AND (DATE_CHECK IS NULL OR DATE_CHECK<=now())  AND IS_PERIOD='N'  ORDER BY RUNNING ASC, SORT desc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:114
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-17 16:45:07
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: 
+Date: 2020-03-17 21:27:07
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:36
+----------
+Host: 
+Date: 2020-03-17 21:27:07
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/tools/cron_events.php:10
+----------
+Host: 
+Date: 2020-03-18 17:35:02
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: 
+Date: 2020-03-18 17:35:02
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < CAllUser::GetSecurityPolicy < require_once < require
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:52
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include.php:310
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/include/prolog_before.php:14
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:36
+----------
+Host: 
+Date: 2020-03-20 23:08:02
+Module: agentExecute
+Add agent
+    CWebdokaCacheAgent::agentExecute < eval < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php(161) : eval()'d code:1
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:161
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: 
+Date: 2020-03-23 15:00:04
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:73
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-23 15:00:04
+Module: main
+FILE: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php<br> LINE: 2581 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/user.php:2581
+	/home/bitrix/ext_www/jur24pro.ru/local/components/mycomponents/main.register/component.php:68
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:548
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/component.php:600
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/general/main.php:1035
+----------
+Host: 
+Date: 2020-03-23 15:00:04
+Module: main
+<br>Class: CUser<br>File: /home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php<br>Function: GetList<br>Line: 576 MySql Query Error: SELECT U.*, DATE_FORMAT(U.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') TIMESTAMP_X, IF(U.LAST_ACTIVITY_DATE > DATE_SUB(NOW(), INTERVAL 120 SECOND), 'Y', 'N') IS_ONLINE, DATE_FORMAT(U.DATE_REGISTER, '%d.%m.%Y %H:%i:%s') DATE_REGISTER, DATE_FORMAT(U.LAST_LOGIN, '%d.%m.%Y %H:%i:%s') LAST_LOGIN, DATE_FORMAT(U.PERSONAL_BIRTHDAY, '%d.%m.%Y') PERSONAL_BIRTHDAY
+			, BUF.UF_CRM_ID_O
+		
+			FROM
+				b_user U
+				
+LEFT JOIN b_uts_user BUF ON BUF.VALUE_ID = U.ID
+				 INNER JOIN (SELECT DISTINCT UG.USER_ID FROM b_user_group UG
+							WHERE UG.GROUP_ID in (25)
+								and (UG.DATE_ACTIVE_FROM is null or	UG.DATE_ACTIVE_FROM <= now())
+								and (UG.DATE_ACTIVE_TO is null or UG.DATE_ACTIVE_TO >= now())
+							) UG ON UG.USER_ID=U.ID 
+			WHERE
+				(1=1)
+			ORDER BY U.NAME asc [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CUser::GetList
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/user.php:576
+	/home/bitrix/ext_www/jur24pro.ru/ajax/raspred.php:13
+----------
+Host: 
+Date: 2020-03-27 23:09:03
+Module: agentExecute
+Add agent
+    CWebdokaCacheAgent::agentExecute < eval < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php(161) : eval()'d code:1
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:161
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:14
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (1, Алименты, alimenty) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (1, Алименты, alimenty)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:15
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (2, Автомобильное право, avtomobilnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (2, Автомобильное право, avtom' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:15
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (3, Авторские и смежные права, avtorskie-i-smezhnye-prava) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (3, Авторские и смежные пра' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:15
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (4, Административное право, administrativnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (4, Административное право,' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:15
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (5, Арбитраж, arbitrazh) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (5, Арбитраж, arbitrazh)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:15
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (6, Банковское право, bankovskoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (6, Банковское право, bankovskoe-' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:16
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (7, Банкротство, bankrotstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (7, Банкротство, bankrotstvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:16
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (8, Бухгалтерский учет, buhgalterskiy-uchet) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (8, Бухгалтерский учет, buhgalt' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:16
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (9, Взыскание задолженности, vzyskanie-zadolzhennosti) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (9, Взыскание задолженност' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:16
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (10, Взятка, vzyatka) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (10, Взятка, vzyatka)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:16
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (11, Военное право, voennoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (11, Военное право, voennoe-pravo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:17
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (12, ГИБДД, gibdd) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (12, ГИБДД, gibdd)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:17
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (13, Госзаказы и госимущество, goszakazy-i-gosimuschestvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (13, Госзаказы и госимущест' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:17
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (14, Гражданское право, grazhdanskoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (14, Гражданское право, grazhdan' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:17
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (15, Гражданство, grazhdanstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (15, Гражданство, grazhdanstvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:17
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (16, Договор, dogovor) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (16, Договор, dogovor)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:18
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (17, Документы, dokumenty) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (17, Документы, dokumenty)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:18
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (18, Долевое участие в строительстве, dolevoe-uchastie-v-stroitelstve) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (18, Долевое участие в строи' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:18
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (19, Жалоба, zhaloba) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (19, Жалоба, zhaloba)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:18
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (20, Жилищное право, zhilischnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (20, Жилищное право, zhilischnoe-pr' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:18
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (21, ЖКХ, zhkh) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (21, ЖКХ, zhkh)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:19
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (22, Завещание, zaveschanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (22, Завещание, zaveschanie)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:19
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (23, Законы и прочие темы, zakony-i-prochie-temy) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (23, Законы и прочие темы, zako' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:19
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (24, Защита прав потребителей, zaschita-prav-potrebiteley) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (24, Защита прав потребител' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:19
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (25, Заявления, zayavleniya) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (25, Заявления, zayavleniya)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:20
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (26, Земельное право, zemelnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (26, Земельное право, zemelnoe-pra' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:20
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (27, Имущество, imuschestvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (27, Имущество, imuschestvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:20
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (28, Инвалидность, invalidnost) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (28, Инвалидность, invalidnost)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:20
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (29, Интернет, internet) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (29, Интернет, internet)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:20
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (30, Иск, isk) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (30, Иск, isk)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (31, Исполнительное производство, ispolnitelnoe-proizvodstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (31, Исполнительное произво' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (32, Конституционное право, konstitucionnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (32, Конституционное право, ' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (33, Кредит, kredit) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (33, Кредит, kredit)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (34, Курение и алкоголь, kurenie-i-alkogol) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (34, Курение и алкоголь, kurenie' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (35, Лицензирование, licenzirovanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (35, Лицензирование, licenzirovani' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (36, Льготы и компенсации, lgoty-i-kompensacii) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (36, Льготы и компенсации, lgo' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (37, Медицинское право, medicinskoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (37, Медицинское право, medicins' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (38, Международное право, mezhdunarodnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (38, Международное право, mezh' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (39, Миграционное право, migracionnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (39, Миграционное право, migrac' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (40, Надбавки, nadbavki) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (40, Надбавки, nadbavki)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (41, Налоги, nalogi) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (41, Налоги, nalogi)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (42, Наследство, nasledstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (42, Наследство, nasledstvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (43, Недвижимость, nedvizhimost) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (43, Недвижимость, nedvizhimost)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (44, Нотариат, notariat) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (44, Нотариат, notariat)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (45, Образование, obrazovanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (45, Образование, obrazovanie)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (46, Опека, opeka) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (46, Опека, opeka)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (47, Пенсии и пособия, pensii-i-posobiya) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (47, Пенсии и пособия, pensii-i-po' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (48, Полиция, policiya) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (48, Полиция, policiya)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (49, Право собственности, pravo-sobstvennosti) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (49, Право собственности, prav' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (50, Прокурорский надзор, prokurorskiy-nadzor) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (50, Прокурорский надзор, prok' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (51, Развод, razvod) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (51, Развод, razvod)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (52, Секс и интим, seks-i-intim) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (52, Секс и интим, seks-i-intim)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (53, Семейное право, semeynoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (53, Семейное право, semeynoe-pravo' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (54, Социальное обеспечение, socialnoe-obespechenie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (54, Социальное обеспечение' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (55, Страхование, strahovanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (55, Страхование, strahovanie)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (56, Субсидии, subsidii) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (56, Субсидии, subsidii)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (57, Судопроизводство, sudoproizvodstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (57, Судопроизводство, sudoproiz' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (58, Таможенное право, tamozhennoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (58, Таможенное право, tamozhenno' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (59, Трудовое право, trudovoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (59, Трудовое право, trudovoe-pravo' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (60, Уголовное право, ugolovnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (60, Уголовное право, ugolovnoe-pr' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (61, Финансовое право, finansovoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (61, Финансовое право, finansovoe' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (62, Экспертиза, ekspertiza) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (62, Экспертиза, ekspertiza)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:31:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category ('CAT_ID', 'NAME', 'URL') VALUES (63, Юридические лица, yuridicheskie-lica) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (63, Юридические лица, yuridiches' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (1, Алименты, alimenty) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (1, Алименты, alimenty)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (2, Автомобильное право, avtomobilnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (2, Автомобильное право, avtom' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:21
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (3, Авторские и смежные права, avtorskie-i-smezhnye-prava) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (3, Авторские и смежные пра' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (4, Административное право, administrativnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (4, Административное право,' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (5, Арбитраж, arbitrazh) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (5, Арбитраж, arbitrazh)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (6, Банковское право, bankovskoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (6, Банковское право, bankovskoe-' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (7, Банкротство, bankrotstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (7, Банкротство, bankrotstvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:22
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (8, Бухгалтерский учет, buhgalterskiy-uchet) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (8, Бухгалтерский учет, buhgalt' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (9, Взыскание задолженности, vzyskanie-zadolzhennosti) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (9, Взыскание задолженност' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (10, Взятка, vzyatka) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (10, Взятка, vzyatka)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (11, Военное право, voennoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (11, Военное право, voennoe-pravo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (12, ГИБДД, gibdd) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (12, ГИБДД, gibdd)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:23
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (13, Госзаказы и госимущество, goszakazy-i-gosimuschestvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (13, Госзаказы и госимущест' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (14, Гражданское право, grazhdanskoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (14, Гражданское право, grazhdan' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (15, Гражданство, grazhdanstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (15, Гражданство, grazhdanstvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (16, Договор, dogovor) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (16, Договор, dogovor)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (17, Документы, dokumenty) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (17, Документы, dokumenty)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:24
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (18, Долевое участие в строительстве, dolevoe-uchastie-v-stroitelstve) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (18, Долевое участие в строи' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (19, Жалоба, zhaloba) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (19, Жалоба, zhaloba)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (20, Жилищное право, zhilischnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (20, Жилищное право, zhilischnoe-pr' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (21, ЖКХ, zhkh) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (21, ЖКХ, zhkh)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:25
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (22, Завещание, zaveschanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (22, Завещание, zaveschanie)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (23, Законы и прочие темы, zakony-i-prochie-temy) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (23, Законы и прочие темы, zako' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (24, Защита прав потребителей, zaschita-prav-potrebiteley) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (24, Защита прав потребител' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (25, Заявления, zayavleniya) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (25, Заявления, zayavleniya)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (26, Земельное право, zemelnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (26, Земельное право, zemelnoe-pra' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:26
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (27, Имущество, imuschestvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (27, Имущество, imuschestvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (28, Инвалидность, invalidnost) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (28, Инвалидность, invalidnost)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (29, Интернет, internet) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (29, Интернет, internet)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (30, Иск, isk) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (30, Иск, isk)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (31, Исполнительное производство, ispolnitelnoe-proizvodstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (31, Исполнительное произво' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:27
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (32, Конституционное право, konstitucionnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (32, Конституционное право, ' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:28
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (33, Кредит, kredit) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (33, Кредит, kredit)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:28
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (34, Курение и алкоголь, kurenie-i-alkogol) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (34, Курение и алкоголь, kurenie' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:28
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (35, Лицензирование, licenzirovanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (35, Лицензирование, licenzirovani' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:28
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (36, Льготы и компенсации, lgoty-i-kompensacii) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (36, Льготы и компенсации, lgo' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:28
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (37, Медицинское право, medicinskoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (37, Медицинское право, medicins' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:29
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (38, Международное право, mezhdunarodnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (38, Международное право, mezh' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:29
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (39, Миграционное право, migracionnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (39, Миграционное право, migrac' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:29
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (40, Надбавки, nadbavki) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (40, Надбавки, nadbavki)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:29
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (41, Налоги, nalogi) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (41, Налоги, nalogi)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:29
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (42, Наследство, nasledstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (42, Наследство, nasledstvo)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:30
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (43, Недвижимость, nedvizhimost) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (43, Недвижимость, nedvizhimost)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:30
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (44, Нотариат, notariat) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (44, Нотариат, notariat)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:30
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (45, Образование, obrazovanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (45, Образование, obrazovanie)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:30
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (46, Опека, opeka) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (46, Опека, opeka)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:30
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (47, Пенсии и пособия, pensii-i-posobiya) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (47, Пенсии и пособия, pensii-i-po' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:31
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (48, Полиция, policiya) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (48, Полиция, policiya)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:31
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (49, Право собственности, pravo-sobstvennosti) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (49, Право собственности, prav' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:31
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (50, Прокурорский надзор, prokurorskiy-nadzor) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (50, Прокурорский надзор, prok' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:31
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (51, Развод, razvod) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (51, Развод, razvod)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:32
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (52, Секс и интим, seks-i-intim) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (52, Секс и интим, seks-i-intim)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:32
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (53, Семейное право, semeynoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (53, Семейное право, semeynoe-pravo' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:32
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (54, Социальное обеспечение, socialnoe-obespechenie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (54, Социальное обеспечение' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:32
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (55, Страхование, strahovanie) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (55, Страхование, strahovanie)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:32
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (56, Субсидии, subsidii) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (56, Субсидии, subsidii)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:33
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (57, Судопроизводство, sudoproizvodstvo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (57, Судопроизводство, sudoproiz' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:33
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (58, Таможенное право, tamozhennoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (58, Таможенное право, tamozhenno' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:33
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (59, Трудовое право, trudovoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (59, Трудовое право, trudovoe-pravo' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:33
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (60, Уголовное право, ugolovnoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (60, Уголовное право, ugolovnoe-pr' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:33
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (61, Финансовое право, finansovoe-pravo) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (61, Финансовое право, finansovoe' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:34
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (62, Экспертиза, ekspertiza) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (62, Экспертиза, ekspertiza)' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-29 22:33:34
+Module: main
+ MySql Query Error: INSERT INTO keyso_category('CAT_ID', 'NAME', 'URL') VALUES (63, Юридические лица, yuridicheskie-lica) [[1064] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''CAT_ID', 'NAME', 'URL') VALUES (63, Юридические лица, yuridiches' at line 1]
+    CDatabaseMysql::Query
+	/home/bitrix/ext_www/jur24pro.ru/get_post_keyso.php:5
+----------
+Host: jur24pro.ru:443
+Date: 2020-03-31 21:04:34
+Module: main
+ MySql Query Error: 
+			SELECT BP.*
+			FROM
+				b_iblock_property BP
+				,b_iblock B
+			WHERE BP.IBLOCK_ID=B.ID
+			 AND B.ID IN (31) 
+			AND UPPER(BP.CODE)='OP' [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllIBlockProperty::GetPropertyArray < CAllIBlockElement::MkFilter < CAllIBlockElement::PrepareGetList < CIBlockElement::prepareSql
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockproperty.php:679
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:1217
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/general/iblockelement.php:3052
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:339
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/iblock/classes/mysql/iblockelement.php:641
+----------
+Host: 
+Date: 2020-04-03 23:10:03
+Module: agentExecute
+Add agent
+    CWebdokaCacheAgent::agentExecute < eval < CAgent::ExecuteAgents < CAgent::CheckAgents
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php(161) : eval()'d code:1
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:161
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/modules/main/classes/mysql/agent.php:38
+	/home/bitrix/ext_www/jur24pro.ru/bitrix/php_interface/cron_events.php:41
+----------

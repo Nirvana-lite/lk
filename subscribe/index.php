@@ -1,0 +1,12 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Подписка");
+?>
+    <?php
+    $APPLICATION->IncludeComponent(
+        "nirvana:subs.mail",
+        "",
+        Array()
+    );
+    ?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -1,0 +1,14 @@
+.block_inf{
+    margin-left: 0;
+    padding-left: 0;
+}
+.block_inf li{
+    list-style-type: none;
+    border-bottom: 1px solid #007bff;
+}
+i.danger{
+    color: crimson;
+}
+i.warning{
+    color: #ffc107;
+}

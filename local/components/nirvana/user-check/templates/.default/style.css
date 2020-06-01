@@ -1,0 +1,89 @@
+.itm{
+    text-align: center;
+    border: 1px solid #0d5b90;
+    border-radius: 5px;
+    padding: 10px;
+}
+.itemCnt {
+    font-size: 130%;
+    font-weight: bold;
+}
+.elems{
+    margin-bottom: 20px;
+}
+.wrap{
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+
+}
+.bottom{
+    text-align: center;
+}
+.modalWrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 90, 90, 0.64);
+    z-index: 1050;
+}
+.modalItem {
+    background: white;
+    padding: 10px;
+    top: 0;
+    overflow: auto;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+    font-size: 15px;
+}
+.itemBlock{
+    height: 90%;
+}
+.elm{
+    border-right: 1px solid #0d5b90;
+}
+.elm .row div {
+    margin-bottom: 15px;
+}
+.card-img-top{
+    height: 250px;
+}
+.itemInfo li{
+    padding-left: 0;
+    padding-right: 0;
+}
+.bld{
+    font-weight: bold;
+}
+.card-footer{
+    text-align: center;
+}
+.closeButton {
+    position: absolute;
+    right: 0;
+}
+.card-group.mt-1 {
+    overflow-y: auto;
+    max-height: 450px;
+}
+.btns{
+    display: flex;
+}
+.newUser{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.newUser i{
+    color: #0a1cec;
+}
+.alrm{
+    color: crimson;
+}
+.changeImg{
+    width: 150px;
+    height: 150px;
+}

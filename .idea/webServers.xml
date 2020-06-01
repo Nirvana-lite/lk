@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="508612c8-0351-46d0-8951-45ddaa51e239" name="jur24pro" url="http://217.182.53.108">
+        <fileTransfer host="217.182.53.108" port="22" rootFolder="/home/bitrix/ext_www/jur24pro.ru" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

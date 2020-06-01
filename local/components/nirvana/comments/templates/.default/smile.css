@@ -1,0 +1,1671 @@
+.wysibb-body .wysiwyg_smile{ width: auto; }
+.emoji {
+    color: transparent;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    display: inline-block;
+}
+#appended2{
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#appended2 li{
+    display: inline-block;
+}
+#appended2 li>span {
+    line-height: 0;
+    text-align: center;
+    display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+    padding: 2px;
+    font-size: 30px;
+}
+
+#appended2 li:hover{background: #e2e2e2; cursor:pointer;}
+
+/* gif  standart size */
+.aa,.ab,.ac,.ad,.ae,.af,.ag,.ah,.ai,.aj,.ak,.al,.am,.an,.ao,.ap,.aq,.ar,.as,.at,.au,.av,.aw,.ax,.ay,.az,.ba,.bb,.bc,.bd,.be,.bf,.bg,.bh,.bi,.bj,.bk,.bl,.bm,.bn,.bo,.bp,.bq,.br,.bs,.bt,.bu,.bv,.bw,.by,.bz{display:inline-block !important;padding:0 !important;margin: 0 !important;}
+
+.ab,.ac,.ad,.ag,.ai,.ba,.be,.bm,.bs{width:20px !important;}
+.ae{width:18px !important;}
+.af,.at{width:21px !important;}
+.al{width:22px !important;}
+.as{width:23px !important;}
+.bh{width:24px !important;}
+.ah,.ap{width:25px !important;}
+.au,.ay{width:26px !important;}
+.aa,.bt,.bw{width:27px !important;}
+.ao,.ar,.bb,.bg{width:28px !important;}
+.an,.bj,.br{width:29px !important;}
+.ax,.bc{width:30px !important;}
+.ak{width:31px !important;}
+.bn{width:32px !important;}
+.aj{width:34px !important;}
+.bd{width:35px !important;}
+.am,.av,.bk,.bl,.bv{width:36px !important;}
+.by{width:37px !important;}
+.aq,.bo{width:39px !important;}
+.bf,.bi,.bz{width:40px !important;}
+.bp{width:42px !important;}
+.bq{width:43px !important;}
+.aw{width:47px !important;}
+.az,.bu{width:51px !important;}
+
+.ae{height:18px !important;}
+.ad,.ag,.ai,.ba,.bn{height:20px !important;}
+.af,.at{height:21px !important;}
+.ak,.au,.bh{height:22px !important;}
+.aa,.aj,.an,.av,.ay{height:23px !important;}
+.ab,.ac,.be,.bs,.aw,.bb,.br,.bt,.bw{height:24px !important;}
+.ah,.ap,.ar,.bg,.bj{height:25px !important;}
+.al,.as,.ax,.bd,.bf,.bk,.bl,.bo,.bu,.bv{height:26px !important;}
+.am,.bi,.bm,.bp,.bq,.bz{height:27px !important;}
+.ao,.az{height:28px !important;}
+.bc{height:33px !important;}
+.aq{height:34px !important;}
+.by{height:37px !important;}
+
+/* gif  madhouse size */
+.sm_alcoholic,.sm_crazy_pilot,.sm_dash1,.sm_dash2,.sm_dash3,.sm_drag,.sm_focus,.sm_gamer1,.sm_gamer2,.sm_gamer3,.sm_gamer4,.sm_girl_crazy,.sm_girl_hospital,.sm_girl_wacko,.sm_hang1,.sm_hang2,.sm_hang3,.sm_hunter,.sm_locomotive,.sm_mail1,.sm_man_in_love,.sm_on_the_quiet2,.sm_on_the_quiet,.sm_pilot,.sm_prankster2,.sm_prankster,.sm_russian_roulette,.sm_sarcastic_blum,.sm_sarcastic,.sm_sarcastic_hand,.sm_slow_en,.sm_slow,.sm_stinker,.sm_suicide2,.sm_suicide_fool_edit,.sm_suicide,.sm_tease,.sm_telephone,.sm_to_become_senile,.sm_to_pick_ones_nose2,.sm_to_pick_ones_nose3,.sm_to_pick_ones_nose_eat,.sm_to_pick_ones_nose,.sm_wacko2,.sm_wacko{display:inline-block !important;padding:0 !important;margin: 0 !important;}
+
+.sm_alcoholic            {width:40px !important;}
+.sm_crazy_pilot          {width:50px !important;}
+.sm_dash1                {width:51px !important;}
+.sm_dash2                {width:31px !important;}
+.sm_dash3                {width:51px !important;}
+.sm_drag                 {width:33px !important;}
+.sm_focus                {width:37px !important;}
+.sm_gamer1               {width:37px !important;}
+.sm_gamer2               {width:37px !important;}
+.sm_gamer3               {width:37px !important;}
+.sm_gamer4               {width:36px !important;}
+.sm_girl_crazy           {width:37px !important;}
+.sm_girl_hospital        {width:42px !important;}
+.sm_girl_wacko           {width:36px !important;}
+.sm_hang1                {width:27px !important;}
+.sm_hang2                {width:27px !important;}
+.sm_hang3                {width:27px !important;}
+.sm_hunter               {width:48px !important;}
+.sm_locomotive           {width:38px !important;}
+.sm_mail1                {width:36px !important;}
+.sm_man_in_love          {width:20px !important;}
+.sm_on_the_quiet2        {width:27px !important;}
+.sm_on_the_quiet         {width:24px !important;}
+.sm_pilot                {width:38px !important;}
+.sm_prankster2           {width:20px !important;}
+.sm_prankster            {width:20px !important;}
+.sm_russian_roulette     {width:44px !important;}
+.sm_sarcastic_blum       {width:21px !important;}
+.sm_sarcastic            {width:25px !important;}
+.sm_sarcastic_hand       {width:32px !important;}
+.sm_slow_en              {width:38px !important;}
+.sm_slow                 {width:38px !important;}
+.sm_stinker              {width:29px !important;}
+.sm_suicide2             {width:43px !important;}
+.sm_suicide_fool_edit    {width:43px !important;}
+.sm_suicide              {width:42px !important;}
+.sm_tease                {width:41px !important;}
+.sm_telephone            {width:44px !important;}
+.sm_to_become_senile     {width:38px !important;}
+.sm_to_pick_ones_nose2   {width:23px !important;}
+.sm_to_pick_ones_nose3   {width:30px !important;}
+.sm_to_pick_ones_nose_eat{width:33px !important;}
+.sm_to_pick_ones_nose    {width:33px !important;}
+.sm_wacko2               {width:20px !important;}
+.sm_wacko                {width:21px !important;}
+
+.sm_alcoholic            {height:20px !important;}
+.sm_crazy_pilot          {height:31px !important;}
+.sm_dash1                {height:26px !important;}
+.sm_dash2                {height:26px !important;}
+.sm_dash3                {height:26px !important;}
+.sm_drag                 {height:28px !important;}
+.sm_focus                {height:25px !important;}
+.sm_gamer1               {height:27px !important;}
+.sm_gamer2               {height:27px !important;}
+.sm_gamer3               {height:27px !important;}
+.sm_gamer4               {height:33px !important;}
+.sm_girl_crazy           {height:25px !important;}
+.sm_girl_hospital        {height:25px !important;}
+.sm_girl_wacko           {height:24px !important;}
+.sm_hang1                {height:35px !important;}
+.sm_hang2                {height:35px !important;}
+.sm_hang3                {height:35px !important;}
+.sm_hunter               {height:38px !important;}
+.sm_locomotive           {height:26px !important;}
+.sm_mail1                {height:26px !important;}
+.sm_man_in_love          {height:26px !important;}
+.sm_on_the_quiet2        {height:26px !important;}
+.sm_on_the_quiet         {height:23px !important;}
+.sm_pilot                {height:26px !important;}
+.sm_prankster2           {height:24px !important;}
+.sm_prankster            {height:24px !important;}
+.sm_russian_roulette     {height:33px !important;}
+.sm_sarcastic_blum       {height:25px !important;}
+.sm_sarcastic            {height:23px !important;}
+.sm_sarcastic_hand       {height:24px !important;}
+.sm_slow_en              {height:26px !important;}
+.sm_slow                 {height:26px !important;}
+.sm_stinker              {height:25px !important;}
+.sm_suicide2             {height:27px !important;}
+.sm_suicide_fool_edit    {height:27px !important;}
+.sm_suicide              {height:33px !important;}
+.sm_tease                {height:40px !important;}
+.sm_telephone            {height:26px !important;}
+.sm_to_become_senile     {height:24px !important;}
+.sm_to_pick_ones_nose2   {height:25px !important;}
+.sm_to_pick_ones_nose3   {height:25px !important;}
+.sm_to_pick_ones_nose_eat{height:27px !important;}
+.sm_to_pick_ones_nose    {height:25px !important;}
+.sm_wacko2               {height:24px !important;}
+.sm_wacko                {height:25px !important;}
+
+/* gif  he_and_she size */
+.sm_buba_phone,.sm_curtsey,.sm_feminist_en,.sm_feminist,.sm_first_move,.sm_flirt,.sm_girl_blum2,.sm_girl_blum,.sm_girl_cray2,.sm_girl_cray3,.sm_girl_cray,.sm_girl_dance,.sm_girl_devil,.sm_girl_drink1,.sm_girl_drink2,.sm_girl_drink3,.sm_girl_drink4,.sm_girl_haha,.sm_girl_hide,.sm_girl_impossible,.sm_girl_in_love,.sm_girl_mad,.sm_girl_pinkglassesf,.sm_girl_prepare_fish,.sm_girl_sad,.sm_girl_sigh,.sm_girl_smile,.sm_girl_to_take_umbrage2,.sm_girl_to_take_umbrage,.sm_girl_wink,.sm_girl_witch,.sm_give_heart,.sm_give_rose,.sm_hysteric,.sm_kiss2,.sm_kiss3,.sm_parting2,.sm_parting,.sm_spruce_up,.sm_tender,.sm_to_babruysk{display:inline-block !important;padding:0 !important;margin: 0 !important;}
+
+.sm_give_heart{width:28px !important;}
+.sm_give_rose{width:30px !important;}
+.sm_girl_blum2,.sm_girl_blum,.sm_girl_cray3,.sm_girl_cray,.sm_girl_impossible,.sm_girl_mad,.sm_girl_pinkglassesf,.sm_girl_sad,.sm_girl_sigh,.sm_girl_smile,.sm_girl_to_take_umbrage2,.sm_girl_wink,.sm_kiss2{width:34px !important;}
+.sm_girl_to_take_umbrage,.sm_girl_drink1,.sm_girl_drink2,.sm_girl_drink3,.sm_girl_drink4,.sm_girl_haha,.sm_girl_hide,.sm_flirt{width:35px !important;}
+.sm_girl_dance,.sm_tender{width:36px !important;}
+.sm_spruce_up,.sm_girl_in_love{width:37px !important;}
+.sm_curtsey,.sm_girl_cray2{width:38px !important;}
+.sm_parting2,.sm_parting {width:40px !important;}
+.sm_hysteric{width:41px !important;}
+.sm_girl_devil,.sm_girl_witch{width:46px !important;}
+.sm_buba_phone,.sm_girl_prepare_fish,.sm_kiss3{width:47px !important;}
+.sm_to_babruysk{width:52px !important;}
+.sm_feminist_en,.sm_feminist{width:54px !important;}
+.sm_first_move{width:55px !important;}
+
+.sm_girl_haha{height:22px !important;}
+.sm_girl_blum2,.sm_girl_blum,.sm_girl_impossible,.sm_girl_mad,.sm_girl_sad,.sm_girl_smile,.sm_girl_to_take_umbrage2,.sm_girl_to_take_umbrage,.sm_girl_wink,.sm_kiss2,.sm_tender{height:23px !important;}
+.sm_kiss3,.sm_parting2,.sm_parting,.sm_girl_sigh,.sm_girl_cray2,.sm_girl_cray3,.sm_girl_drink3,.sm_girl_drink4,.sm_curtsey,.sm_first_move,.sm_flirt,.sm_girl_hide{height:24px !important;}
+.sm_spruce_up,.sm_girl_cray,.sm_girl_drink1,.sm_girl_drink2,.sm_give_heart,.sm_hysteric{height:25px !important;}
+.sm_give_rose,.sm_girl_dance,.sm_girl_prepare_fish{height:26px !important;}
+.sm_girl_in_love{height:27px !important;}
+.sm_girl_devil{height:28px !important;}
+.sm_to_babruysk{height:30px !important;}
+.sm_girl_witch{height:31px !important;}
+.sm_buba_phone{height:32px !important;}
+.sm_girl_pinkglassesf{height:37px !important;}
+.sm_feminist_en,.sm_feminist{height:49px !important;}
+
+/* gif  personal size */
+.sm_angel,.sm_beach,.sm_beta,.sm_big_boss,.sm_blind,.sm_brunette,.sm_buba,.sm_comando,.sm_ded_moroz,.sm_ded_snegurochka2,.sm_ded_snegurochka,.sm_diablo,.sm_hi,.sm_mamba,.sm_meowth,.sm_moil,.sm_morpheus,.sm_music2,.sm_music,.sm_neo,.sm_new_russian,.sm_padonak,.sm_paint2,.sm_paint3,.sm_paint,.sm_patsak,.sm_pig_ball,.sm_pioneer,.sm_pioneer_smoke,.sm_pogranichnik,.sm_pooh_birth_day,.sm_pooh_door,.sm_pooh,.sm_pooh_go,.sm_pooh_honey,.sm_pooh_lol,.sm_pooh_on_ball,.sm_rabbi,.sm_rap,.sm_russian,.sm_santa2,.sm_santa3,.sm_santa,.sm_scenic,.sm_scout_en,.sm_scout,.sm_snegurochka,.sm_sun_bespectacled,.sm_superman2,.sm_superman,.sm_to_keep_order,.sm_tommy,.sm_triniti,.sm_vinsent,.sm_wild{display:inline-block !important;padding:0 !important;margin: 0 !important;}
+
+.sm_pogranichnik{width:22px !important;}
+.sm_santa3,.sm_santa{width:26px !important;}
+.sm_angel,.sm_blind{width:27px !important;}
+.sm_mamba,.sm_music2,.sm_music,.sm_pooh_honey,.sm_to_keep_order{width:28px !important;}
+.sm_pooh_lol,.sm_buba,.sm_pioneer,.sm_rabbi{width:29px !important;}
+.sm_rap,.sm_sun_bespectacled{width:30px !important;}
+.sm_ded_moroz{width:32px !important;}
+.sm_neo,.sm_pooh_go{width:33px !important;}
+.sm_beach,.sm_padonak,.sm_pooh_birth_day{width:34px !important;}
+.sm_brunette,.sm_new_russian{width:35px !important;}
+.sm_beta,.sm_pioneer_smoke{width:36px !important;}
+.sm_vinsent,.sm_wild,.sm_diablo,.sm_pig_ball,.sm_scout_en,.sm_scout{width:37px !important;}
+.sm_big_boss,.sm_superman{width:38px !important;}
+.sm_triniti{width:39px !important;}
+.sm_russian,.sm_superman2{width:40px !important;}
+.sm_comando,.sm_moil,.sm_paint2,.sm_paint3,.sm_paint{width:41px !important;}
+.sm_hi,.sm_patsak,.sm_snegurochka,.sm_tommy{width:42px !important;}
+.sm_pooh_on_ball{width:43px !important;}
+.sm_ded_snegurochka,.sm_meowth{width:44px !important;}
+.sm_scenic{width:49px !important;}
+.sm_pooh{width:52px !important;}
+.sm_pooh_door{width:53px !important;}
+.sm_morpheus,.sm_santa2{width:57px !important;}
+.sm_ded_snegurochka2{width:74px !important;}
+
+
+.sm_to_keep_order   {height:22px !important;}
+.sm_wild            {height:22px !important;}
+.sm_blind           {height:23px !important;}
+.sm_beta            {height:23px !important;}
+.sm_neo             {height:24px !important;}
+.sm_buba            {height:25px !important;}
+.sm_mamba           {height:25px !important;}
+.sm_music2          {height:25px !important;}
+.sm_music           {height:25px !important;}
+.sm_pogranichnik    {height:25px !important;}
+.sm_angel           {height:26px !important;}
+.sm_new_russian     {height:26px !important;}
+.sm_triniti         {height:26px !important;}
+.sm_snegurochka     {height:27px !important;}
+.sm_superman        {height:27px !important;}
+.sm_tommy           {height:27px !important;}
+.sm_scenic          {height:27px !important;}
+.sm_ded_snegurochka2{height:28px !important;}
+.sm_ded_snegurochka {height:28px !important;}
+.sm_hi              {height:28px !important;}
+.sm_morpheus        {height:28px !important;}
+.sm_paint2          {height:28px !important;}
+.sm_paint3          {height:28px !important;}
+.sm_paint           {height:28px !important;}
+.sm_rap             {height:28px !important;}
+.sm_santa2          {height:29px !important;}
+.sm_santa3          {height:29px !important;}
+.sm_santa           {height:29px !important;}
+.sm_big_boss        {height:30px !important;}
+.sm_padonak         {height:30px !important;}
+.sm_patsak          {height:30px !important;}
+.sm_sun_bespectacled{height:30px !important;}
+.sm_superman2       {height:30px !important;}
+.sm_brunette        {height:31px !important;}
+.sm_comando         {height:31px !important;}
+.sm_diablo          {height:31px !important;}
+.sm_meowth          {height:31px !important;}
+.sm_rabbi           {height:31px !important;}
+.sm_pooh_honey      {height:32px !important;}
+.sm_pooh_lol        {height:32px !important;}
+.sm_beach           {height:33px !important;}
+.sm_pioneer         {height:33px !important;}
+.sm_pioneer_smoke   {height:33px !important;}
+.sm_scout_en        {height:33px !important;}
+.sm_scout           {height:33px !important;}
+.sm_vinsent         {height:33px !important;}
+.sm_ded_moroz       {height:36px !important;}
+.sm_pooh_birth_day  {height:36px !important;}
+.sm_pooh            {height:36px !important;}
+.sm_pooh_go         {height:36px !important;}
+.sm_moil            {height:37px !important;}
+.sm_pooh_door       {height:37px !important;}
+.sm_russian         {height:40px !important;}
+.sm_pig_ball        {height:45px !important;}
+.sm_pooh_on_ball    {height:53px !important;}
+
+/* gif  sport size */
+.sm_aikido,.sm_banned,.sm_dinamo,.sm_fan_1,.sm_fans,.sm_nhl2,.sm_nhl3,.sm_nhl_checking,.sm_nhl_crach,.sm_nhl_fight,.sm_nhl,.sm_phi,.sm_protest,.sm_shablon_01,.sm_shablon_02,.sm_shablon_03,.sm_shablon_04,.sm_spartak,.sm_training1,.sm_warning2,.sm_warning{display:inline-block !important;padding:0 !important;margin: 0 !important;}
+
+.sm_aikido               {width:50px !important;}
+.sm_banned               {width:44px !important;}
+.sm_dinamo               {width:55px !important;}
+.sm_fan_1                {width:38px !important;}
+.sm_fans                 {width:72px !important;}
+.sm_nhl2                 {width:46px !important;}
+.sm_nhl3                 {width:46px !important;}
+.sm_nhl_checking         {width:54px !important;}
+.sm_nhl_crach            {width:47px !important;}
+.sm_nhl_fight            {width:57px !important;}
+.sm_nhl                  {width:46px !important;}
+.sm_phi                  {width:46px !important;}
+.sm_protest              {width:50px !important;}
+.sm_shablon_01           {width:55px !important;}
+.sm_shablon_02           {width:55px !important;}
+.sm_shablon_03           {width:59px !important;}
+.sm_shablon_04           {width:59px !important;}
+.sm_spartak              {width:59px !important;}
+.sm_training1            {width:49px !important;}
+.sm_warning2             {width:41px !important;}
+.sm_warning              {width:41px !important;}
+
+
+.sm_aikido               {height:30px !important;}
+.sm_banned               {height:32px !important;}
+.sm_dinamo               {height:40px !important;}
+.sm_fan_1                {height:28px !important;}
+.sm_fans                 {height:35px !important;}
+.sm_nhl2                 {height:38px !important;}
+.sm_nhl3                 {height:38px !important;}
+.sm_nhl_checking         {height:38px !important;}
+.sm_nhl_crach            {height:43px !important;}
+.sm_nhl_fight            {height:38px !important;}
+.sm_nhl                  {height:38px !important;}
+.sm_phi                  {height:41px !important;}
+.sm_protest              {height:32px !important;}
+.sm_shablon_01           {height:40px !important;}
+.sm_shablon_02           {height:40px !important;}
+.sm_shablon_03           {height:36px !important;}
+.sm_shablon_04           {height:36px !important;}
+.sm_spartak              {height:36px !important;}
+.sm_training1            {height:21px !important;}
+.sm_warning2             {height:31px !important;}
+.sm_warning              {height:31px !important;}
+
+/* png stickers size */
+.pngstick {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    display:block !important;
+}
+
+.tabs-emojii .pngstick:hover, .tabs-emojii .mysmile:hover {
+    filter: drop-shadow(1px 5px 0 rgba(0,0,0,0.1));
+    -moz-transform: translate3d(0,-1px,0);
+    -ms-transform: translate3d(0,-1px,0);
+    -webkit-transform: translate3d(0,-1px,0);
+    -o-transform: translate3d(0,-1px,0);
+    transform: translate3d(0,-1px,0);
+}
+.mysmile{
+    display: inline-block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 93px;
+    height: 93px;
+    background-size: 93px;
+    background-repeat: no-repeat;
+}
+.emoji241{
+    width: 44px !important;
+    height: 70px !important;
+    background-size: 46px !important;
+}
+.emoji242{}
+.emoji243{}
+.emoji244{}
+.emoji245{}
+.emoji246{}
+.emoji247{}
+.emoji248{}
+.emoji249{}
+.emoji2410{}
+.emoji2411{}
+.emoji2412{}
+
+
+
+
+.emoji.U1F604 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f604.png);}
+.emoji.U1F603 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f603.png);}
+.emoji.U1F600 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f600.png);}
+.emoji.U1F60A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f60a.png);}
+.emoji.U263A {background-image: url(/local/components/khayr/answers/emoji/emoji/263a.png);}
+.emoji.U1F609 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f609.png);}
+.emoji.U1F60D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f60d.png);}
+.emoji.U1F618 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f618.png);}
+.emoji.U1F61A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f61a.png);}
+.emoji.U1F617 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f617.png);}
+.emoji.U1F619 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f619.png);}
+.emoji.U1F61C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f61c.png);}
+.emoji.U1F61D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f61d.png);}
+.emoji.U1F61B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f61b.png);}
+.emoji.U1F633 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f633.png);}
+.emoji.U1F601 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f601.png);}
+.emoji.U1F614 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f614.png);}
+.emoji.U1F60C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f60c.png);}
+.emoji.U1F612 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f612.png);}
+.emoji.U1F61E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f61e.png);}
+.emoji.U1F623 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f623.png);}
+.emoji.U1F622 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f622.png);}
+.emoji.U1F602 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f602.png);}
+.emoji.U1F62D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f62d.png);}
+.emoji.U1F62A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f62a.png);}
+.emoji.U1F625 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f625.png);}
+.emoji.U1F630 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f630.png);}
+.emoji.U1F605 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f605.png);}
+.emoji.U1F613 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f613.png);}
+.emoji.U1F629 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f629.png);}
+.emoji.U1F62B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f62b.png);}
+.emoji.U1F628 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f628.png);}
+.emoji.U1F631 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f631.png);}
+.emoji.U1F620 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f620.png);}
+.emoji.U1F621 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f621.png);}
+.emoji.U1F624 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f624.png);}
+.emoji.U1F616 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f616.png);}
+.emoji.U1F606 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f606.png);}
+.emoji.U1F60B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f60b.png);}
+.emoji.U1F637 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f637.png);}
+.emoji.U1F60E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f60e.png);}
+.emoji.U1F634 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f634.png);}
+.emoji.U1F635 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f635.png);}
+.emoji.U1F632 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f632.png);}
+.emoji.U1F61F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f61f.png);}
+.emoji.U1F626 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f626.png);}
+.emoji.U1F627 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f627.png);}
+.emoji.U1F608 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f608.png);}
+.emoji.U1F47F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f47f.png);}
+.emoji.U1F62E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f62e.png);}
+.emoji.U1F62C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f62c.png);}
+.emoji.U1F610 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f610.png);}
+.emoji.U1F615 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f615.png);}
+.emoji.U1F62F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f62f.png);}
+.emoji.U1F636 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f636.png);}
+.emoji.U1F607 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f607.png);}
+.emoji.U1F60F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f60f.png);}
+.emoji.U1F611 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f611.png);}
+.emoji.U1F472 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f472.png);}
+.emoji.U1F473 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f473.png);}
+.emoji.U1F46E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f46e.png);}
+.emoji.U1F477 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f477.png);}
+.emoji.U1F482 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f482.png);}
+.emoji.U1F476 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f476.png);}
+.emoji.U1F466 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f466.png);}
+.emoji.U1F467 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f467.png);}
+.emoji.U1F468 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f468.png);}
+.emoji.U1F469 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f469.png);}
+.emoji.U1F474 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f474.png);}
+.emoji.U1F475 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f475.png);}
+.emoji.U1F471 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f471.png);}
+.emoji.U1F47C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f47c.png);}
+.emoji.U1F478 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f478.png);}
+.emoji.U1F63A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f63a.png);}
+.emoji.U1F638 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f638.png);}
+.emoji.U1F63B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f63b.png);}
+.emoji.U1F63D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f63d.png);}
+.emoji.U1F63C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f63c.png);}
+.emoji.U1F640 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f640.png);}
+.emoji.U1F63F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f63f.png);}
+.emoji.U1F639 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f639.png);}
+.emoji.U1F63E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f63e.png);}
+.emoji.U1F479 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f479.png);}
+.emoji.U1F47A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f47a.png);}
+.emoji.U1F648 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f648.png);}
+.emoji.U1F649 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f649.png);}
+.emoji.U1F64A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f64a.png);}
+.emoji.U1F480 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f480.png);}
+.emoji.U1F47D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f47d.png);}
+.emoji.U1F4A9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a9.png);}
+.emoji.U1F525 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f525.png);}
+.emoji.U2728 {background-image: url(/local/components/khayr/answers/emoji/emoji/2728.png);}
+.emoji.U1F31F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f31f.png);}
+.emoji.U1F4AB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ab.png);}
+.emoji.U1F4A5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a5.png);}
+.emoji.U1F4A2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a2.png);}
+.emoji.U1F4A6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a6.png);}
+.emoji.U1F4A7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a7.png);}
+.emoji.U1F4A4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a4.png);}
+.emoji.U1F4A8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a8.png);}
+.emoji.U1F442 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f442.png);}
+.emoji.U1F440 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f440.png);}
+.emoji.U1F443 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f443.png);}
+.emoji.U1F445 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f445.png);}
+.emoji.U1F444 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f444.png);}
+.emoji.U1F44D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f44d.png);}
+.emoji.U1F44E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f44e.png);}
+.emoji.U1F44C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f44c.png);}
+.emoji.U1F44A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f44a.png);}
+.emoji.U270A {background-image: url(/local/components/khayr/answers/emoji/emoji/270a.png);}
+.emoji.U270C {background-image: url(/local/components/khayr/answers/emoji/emoji/270c.png);}
+.emoji.U1F44B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f44b.png);}
+.emoji.U270B {background-image: url(/local/components/khayr/answers/emoji/emoji/270b.png);}
+.emoji.U1F450 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f450.png);}
+.emoji.U1F446 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f446.png);}
+.emoji.U1F447 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f447.png);}
+.emoji.U1F449 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f449.png);}
+.emoji.U1F448 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f448.png);}
+.emoji.U1F64C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f64c.png);}
+.emoji.U1F64F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f64f.png);}
+.emoji.U261D {background-image: url(/local/components/khayr/answers/emoji/emoji/261d.png);}
+.emoji.U1F44F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f44f.png);}
+.emoji.U1F4AA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4aa.png);}
+.emoji.U1F6B6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b6.png);}
+.emoji.U1F3C3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c3.png);}
+.emoji.U1F483 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f483.png);}
+.emoji.U1F46B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f46b.png);}
+.emoji.U1F46A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f46a.png);}
+.emoji.U1F46C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f46c.png);}
+.emoji.U1F46D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f46d.png);}
+.emoji.U1F48F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f48f.png);}
+.emoji.U1F491 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f491.png);}
+.emoji.U1F46F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f46f.png);}
+.emoji.U1F646 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f646.png);}
+.emoji.U1F645 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f645.png);}
+.emoji.U1F481 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f481.png);}
+.emoji.U1F64B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f64b.png);}
+.emoji.U1F486 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f486.png);}
+.emoji.U1F487 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f487.png);}
+.emoji.U1F485 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f485.png);}
+.emoji.U1F470 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f470.png);}
+.emoji.U1F64E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f64e.png);}
+.emoji.U1F64D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f64d.png);}
+.emoji.U1F647 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f647.png);}
+.emoji.U1F3A9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a9.png);}
+.emoji.U1F451 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f451.png);}
+.emoji.U1F452 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f452.png);}
+.emoji.U1F45F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f45f.png);}
+.emoji.U1F45E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f45e.png);}
+.emoji.U1F461 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f461.png);}
+.emoji.U1F460 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f460.png);}
+.emoji.U1F462 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f462.png);}
+.emoji.U1F455 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f455.png);}
+.emoji.U1F454 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f454.png);}
+.emoji.U1F45A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f45a.png);}
+.emoji.U1F457 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f457.png);}
+.emoji.U1F3BD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3bd.png);}
+.emoji.U1F456 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f456.png);}
+.emoji.U1F458 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f458.png);}
+.emoji.U1F459 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f459.png);}
+.emoji.U1F4BC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4bc.png);}
+.emoji.U1F45C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f45c.png);}
+.emoji.U1F45D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f45d.png);}
+.emoji.U1F45B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f45b.png);}
+.emoji.U1F453 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f453.png);}
+.emoji.U1F380 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f380.png);}
+.emoji.U1F302 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f302.png);}
+.emoji.U1F484 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f484.png);}
+
+.emoji.U1F436 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f436.png);}
+.emoji.U1F43A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f43a.png);}
+.emoji.U1F431 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f431.png);}
+.emoji.U1F42D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f42d.png);}
+.emoji.U1F439 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f439.png);}
+.emoji.U1F430 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f430.png);}
+.emoji.U1F438 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f438.png);}
+.emoji.U1F42F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f42f.png);}
+.emoji.U1F428 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f428.png);}
+.emoji.U1F43B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f43b.png);}
+.emoji.U1F437 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f437.png);}
+.emoji.U1F43D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f43d.png);}
+.emoji.U1F42E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f42e.png);}
+.emoji.U1F417 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f417.png);}
+.emoji.U1F435 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f435.png);}
+.emoji.U1F412 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f412.png);}
+.emoji.U1F434 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f434.png);}
+.emoji.U1F411 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f411.png);}
+.emoji.U1F418 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f418.png);}
+.emoji.U1F43C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f43c.png);}
+.emoji.U1F427 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f427.png);}
+.emoji.U1F426 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f426.png);}
+.emoji.U1F424 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f424.png);}
+.emoji.U1F425 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f425.png);}
+.emoji.U1F423 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f423.png);}
+.emoji.U1F414 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f414.png);}
+.emoji.U1F40D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f40d.png);}
+.emoji.U1F422 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f422.png);}
+.emoji.U1F41B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f41b.png);}
+.emoji.U1F41D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f41d.png);}
+.emoji.U1F41C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f41c.png);}
+.emoji.U1F41E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f41e.png);}
+.emoji.U1F40C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f40c.png);}
+.emoji.U1F419 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f419.png);}
+.emoji.U1F41A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f41a.png);}
+.emoji.U1F420 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f420.png);}
+.emoji.U1F41F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f41f.png);}
+.emoji.U1F42C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f42c.png);}
+.emoji.U1F433 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f433.png);}
+.emoji.U1F40B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f40b.png);}
+.emoji.U1F404 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f404.png);}
+.emoji.U1F40F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f40f.png);}
+.emoji.U1F400 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f400.png);}
+.emoji.U1F403 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f403.png);}
+.emoji.U1F405 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f405.png);}
+.emoji.U1F407 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f407.png);}
+.emoji.U1F409 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f409.png);}
+.emoji.U1F40E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f40e.png);}
+.emoji.U1F410 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f410.png);}
+.emoji.U1F413 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f413.png);}
+.emoji.U1F415 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f415.png);}
+.emoji.U1F416 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f416.png);}
+.emoji.U1F401 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f401.png);}
+.emoji.U1F402 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f402.png);}
+.emoji.U1F432 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f432.png);}
+.emoji.U1F421 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f421.png);}
+.emoji.U1F40A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f40a.png);}
+.emoji.U1F42B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f42b.png);}
+.emoji.U1F42A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f42a.png);}
+.emoji.U1F406 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f406.png);}
+.emoji.U1F408 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f408.png);}
+.emoji.U1F429 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f429.png);}
+.emoji.U1F43E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f43e.png);}
+.emoji.U1F490 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f490.png);}
+.emoji.U1F338 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f338.png);}
+.emoji.U1F337 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f337.png);}
+.emoji.U1F340 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f340.png);}
+.emoji.U1F339 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f339.png);}
+.emoji.U1F33B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f33b.png);}
+.emoji.U1F33A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f33a.png);}
+.emoji.U1F341 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f341.png);}
+.emoji.U1F343 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f343.png);}
+.emoji.U1F342 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f342.png);}
+.emoji.U1F33F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f33f.png);}
+.emoji.U1F33E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f33e.png);}
+.emoji.U1F344 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f344.png);}
+.emoji.U1F335 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f335.png);}
+.emoji.U1F334 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f334.png);}
+.emoji.U1F332 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f332.png);}
+.emoji.U1F333 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f333.png);}
+.emoji.U1F330 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f330.png);}
+.emoji.U1F331 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f331.png);}
+.emoji.U1F33C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f33c.png);}
+.emoji.U1F310 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f310.png);}
+.emoji.U1F31E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f31e.png);}
+.emoji.U1F31D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f31d.png);}
+.emoji.U1F31A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f31a.png);}
+.emoji.U1F311 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f311.png);}
+.emoji.U1F312 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f312.png);}
+.emoji.U1F313 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f313.png);}
+.emoji.U1F314 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f314.png);}
+.emoji.U1F315 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f315.png);}
+.emoji.U1F316 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f316.png);}
+.emoji.U1F317 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f317.png);}
+.emoji.U1F318 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f318.png);}
+.emoji.U1F31C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f31c.png);}
+.emoji.U1F31B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f31b.png);}
+.emoji.U1F319 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f319.png);}
+.emoji.U1F30D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f30d.png);}
+.emoji.U1F30E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f30e.png);}
+.emoji.U1F30F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f30f.png);}
+.emoji.U1F30B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f30b.png);}
+.emoji.U1F30C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f30c.png);}
+.emoji.U1F320 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f320.png);}
+.emoji.U2B50 {background-image: url(/local/components/khayr/answers/emoji/emoji/2b50.png);}
+.emoji.U2600 {background-image: url(/local/components/khayr/answers/emoji/emoji/2600.png);}
+.emoji.U26C5 {background-image: url(/local/components/khayr/answers/emoji/emoji/26c5.png);}
+.emoji.U2601 {background-image: url(/local/components/khayr/answers/emoji/emoji/2601.png);}
+.emoji.U26A1 {background-image: url(/local/components/khayr/answers/emoji/emoji/26a1.png);}
+.emoji.U2614 {background-image: url(/local/components/khayr/answers/emoji/emoji/2614.png);}
+.emoji.U2744 {background-image: url(/local/components/khayr/answers/emoji/emoji/2744.png);}
+.emoji.U26C4 {background-image: url(/local/components/khayr/answers/emoji/emoji/26c4.png);}
+.emoji.U1F300 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f300.png);}
+.emoji.U1F301 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f301.png);}
+.emoji.U1F308 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f308.png);}
+.emoji.U1F30A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f30a.png);}
+
+.emoji.U1F34E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f34e.png);}
+.emoji.U1F34F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f34f.png);}
+.emoji.U1F34A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f34a.png);}
+.emoji.U1F34B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f34b.png);}
+.emoji.U1F352 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f352.png);}
+.emoji.U1F347 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f347.png);}
+.emoji.U1F349 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f349.png);}
+.emoji.U1F353 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f353.png);}
+.emoji.U1F351 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f351.png);}
+.emoji.U1F348 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f348.png);}
+.emoji.U1F34C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f34c.png);}
+.emoji.U1F350 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f350.png);}
+.emoji.U1F34D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f34d.png);}
+.emoji.U1F360 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f360.png);}
+.emoji.U1F346 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f346.png);}
+.emoji.U1F345 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f345.png);}
+.emoji.U1F33D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f33d.png);}
+.emoji.U2615 {background-image: url(/local/components/khayr/answers/emoji/emoji/2615.png);}
+.emoji.U1F375 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f375.png);}
+.emoji.U1F376 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f376.png);}
+.emoji.U1F37C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f37c.png);}
+.emoji.U1F37A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f37a.png);}
+.emoji.U1F37B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f37b.png);}
+.emoji.U1F378 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f378.png);}
+.emoji.U1F379 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f379.png);}
+.emoji.U1F377 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f377.png);}
+.emoji.U1F374 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f374.png);}
+.emoji.U1F355 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f355.png);}
+.emoji.U1F354 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f354.png);}
+.emoji.U1F35F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f35f.png);}
+.emoji.U1F357 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f357.png);}
+.emoji.U1F356 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f356.png);}
+.emoji.U1F35D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f35d.png);}
+.emoji.U1F35B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f35b.png);}
+.emoji.U1F364 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f364.png);}
+.emoji.U1F371 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f371.png);}
+.emoji.U1F363 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f363.png);}
+.emoji.U1F365 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f365.png);}
+.emoji.U1F359 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f359.png);}
+.emoji.U1F358 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f358.png);}
+.emoji.U1F35A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f35a.png);}
+.emoji.U1F35C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f35c.png);}
+.emoji.U1F372 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f372.png);}
+.emoji.U1F362 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f362.png);}
+.emoji.U1F361 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f361.png);}
+.emoji.U1F373 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f373.png);}
+.emoji.U1F35E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f35e.png);}
+.emoji.U1F369 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f369.png);}
+.emoji.U1F36E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f36e.png);}
+.emoji.U1F366 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f366.png);}
+.emoji.U1F368 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f368.png);}
+.emoji.U1F367 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f367.png);}
+.emoji.U1F382 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f382.png);}
+.emoji.U1F370 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f370.png);}
+.emoji.U1F36A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f36a.png);}
+.emoji.U1F36B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f36b.png);}
+.emoji.U1F36C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f36c.png);}
+.emoji.U1F36D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f36d.png);}
+.emoji.U1F36F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f36f.png);}
+
+.emoji.U1F47E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f47e.png);}
+.emoji.U1F3AE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ae.png);}
+.emoji.U1F0CF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f0cf.png);}
+.emoji.U1F3B4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b4.png);}
+.emoji.U1F004 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f004.png);}
+.emoji.U1F3B2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b2.png);}
+.emoji.U1F3AF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3af.png);}
+.emoji.U1F3C8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c8.png);}
+.emoji.U1F3C0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c0.png);}
+.emoji.U26BD {background-image: url(/local/components/khayr/answers/emoji/emoji/26bd.png);}
+.emoji.U26BE {background-image: url(/local/components/khayr/answers/emoji/emoji/26be.png);}
+.emoji.U1F3BE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3be.png);}
+.emoji.U1F3B1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b1.png);}
+.emoji.U1F3C9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c9.png);}
+.emoji.U1F3B3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b3.png);}
+.emoji.U26F3 {background-image: url(/local/components/khayr/answers/emoji/emoji/26f3.png);}
+.emoji.U1F6B5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b5.png);}
+.emoji.U1F6B4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b4.png);}
+.emoji.U1F3C1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c1.png);}
+.emoji.U1F3C7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c7.png);}
+.emoji.U1F3C6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c6.png);}
+.emoji.U1F3BF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3bf.png);}
+.emoji.U1F3C2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c2.png);}
+.emoji.U1F3CA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ca.png);}
+.emoji.U1F3C4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3c4.png);}
+.emoji.U1F3A3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a3.png);}
+.emoji.U1F3A8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a8.png);}
+.emoji.U1F3AC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ac.png);}
+.emoji.U1F3A4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a4.png);}
+.emoji.U1F3A7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a7.png);}
+.emoji.U1F3BC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3bc.png);}
+.emoji.U1F3B5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b5.png);}
+.emoji.U1F3B6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b6.png);}
+.emoji.U1F3B9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b9.png);}
+.emoji.U1F3BB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3bb.png);}
+.emoji.U1F3BA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ba.png);}
+.emoji.U1F3B7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b7.png);}
+.emoji.U1F3B8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b8.png);}
+
+.emoji.U26F5 {background-image: url(/local/components/khayr/answers/emoji/emoji/26f5.png);}
+.emoji.U1F6A4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a4.png);}
+.emoji.U1F6A3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a3.png);}
+.emoji.U2693 {background-image: url(/local/components/khayr/answers/emoji/emoji/2693.png);}
+.emoji.U1F680 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f680.png);}
+.emoji.U2708 {background-image: url(/local/components/khayr/answers/emoji/emoji/2708.png);}
+.emoji.U1F4BA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ba.png);}
+.emoji.U1F681 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f681.png);}
+.emoji.U1F682 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f682.png);}
+.emoji.U1F68A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f68a.png);}
+.emoji.U1F689 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f689.png);}
+.emoji.U1F69E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f69e.png);}
+.emoji.U1F686 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f686.png);}
+.emoji.U1F684 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f684.png);}
+.emoji.U1F685 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f685.png);}
+.emoji.U1F688 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f688.png);}
+.emoji.U1F687 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f687.png);}
+.emoji.U1F69D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f69d.png);}
+.emoji.U1F68B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f68b.png);}
+.emoji.U1F683 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f683.png);}
+.emoji.U1F68E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f68e.png);}
+.emoji.U1F68C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f68c.png);}
+.emoji.U1F68D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f68d.png);}
+.emoji.U1F699 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f699.png);}
+.emoji.U1F698 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f698.png);}
+.emoji.U1F697 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f697.png);}
+.emoji.U1F695 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f695.png);}
+.emoji.U1F696 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f696.png);}
+.emoji.U1F69B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f69b.png);}
+.emoji.U1F69A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f69a.png);}
+.emoji.U1F6A8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a8.png);}
+.emoji.U1F693 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f693.png);}
+.emoji.U1F694 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f694.png);}
+.emoji.U1F692 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f692.png);}
+.emoji.U1F691 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f691.png);}
+.emoji.U1F690 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f690.png);}
+.emoji.U1F6B2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b2.png);}
+.emoji.U1F6A1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a1.png);}
+.emoji.U1F69F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f69f.png);}
+.emoji.U1F6A0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a0.png);}
+.emoji.U1F69C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f69c.png);}
+.emoji.U1F488 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f488.png);}
+.emoji.U1F68F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f68f.png);}
+.emoji.U1F3AB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ab.png);}
+.emoji.U1F6A6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a6.png);}
+.emoji.U1F6A5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a5.png);}
+.emoji.U26A0 {background-image: url(/local/components/khayr/answers/emoji/emoji/26a0.png);}
+.emoji.U1F6A7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a7.png);}
+.emoji.U1F530 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f530.png);}
+.emoji.U26FD {background-image: url(/local/components/khayr/answers/emoji/emoji/26fd.png);}
+.emoji.U1F3EE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ee.png);}
+.emoji.U1F3B0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3b0.png);}
+.emoji.U2668 {background-image: url(/local/components/khayr/answers/emoji/emoji/2668.png);}
+.emoji.U1F5FF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f5ff.png);}
+.emoji.U1F3AA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3aa.png);}
+.emoji.U1F3AD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ad.png);}
+.emoji.U1F4CD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4cd.png);}
+.emoji.U1F6A9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a9.png);}
+.emoji.U1F3E0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e0.png);}
+.emoji.U1F3E1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e1.png);}
+.emoji.U1F3EB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3eb.png);}
+.emoji.U1F3E2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e2.png);}
+.emoji.U1F3E3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e3.png);}
+.emoji.U1F3E5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e5.png);}
+.emoji.U1F3E6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e6.png);}
+.emoji.U1F3EA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ea.png);}
+.emoji.U1F3E9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e9.png);}
+.emoji.U1F3E8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e8.png);}
+.emoji.U1F492 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f492.png);}
+.emoji.U26EA {background-image: url(/local/components/khayr/answers/emoji/emoji/26ea.png);}
+.emoji.U1F3EC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ec.png);}
+.emoji.U1F3E4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e4.png);}
+.emoji.U1F307 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f307.png);}
+.emoji.U1F306 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f306.png);}
+.emoji.U1F3EF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ef.png);}
+.emoji.U1F3F0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3f0.png);}
+.emoji.U26FA {background-image: url(/local/components/khayr/answers/emoji/emoji/26fa.png);}
+.emoji.U1F3ED {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3ed.png);}
+.emoji.U1F5FC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f5fc.png);}
+.emoji.U1F5FE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f5fe.png);}
+.emoji.U1F5FB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f5fb.png);}
+.emoji.U1F304 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f304.png);}
+.emoji.U1F305 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f305.png);}
+.emoji.U1F303 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f303.png);}
+.emoji.U1F5FD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f5fd.png);}
+.emoji.U1F309 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f309.png);}
+.emoji.U1F3A0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a0.png);}
+.emoji.U1F3A1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a1.png);}
+.emoji.U26F2 {background-image: url(/local/components/khayr/answers/emoji/emoji/26f2.png);}
+.emoji.U1F3A2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a2.png);}
+.emoji.U1F6A2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6a2.png);}
+
+.emoji.U1F38D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f38d.png);}
+.emoji.U1F49D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f49d.png);}
+.emoji.U1F38E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f38e.png);}
+.emoji.U1F392 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f392.png);}
+.emoji.U1F393 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f393.png);}
+.emoji.U1F38F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f38f.png);}
+.emoji.U1F386 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f386.png);}
+.emoji.U1F387 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f387.png);}
+.emoji.U1F390 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f390.png);}
+.emoji.U1F391 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f391.png);}
+.emoji.U1F383 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f383.png);}
+.emoji.U1F47B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f47b.png);}
+.emoji.U1F385 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f385.png);}
+.emoji.U1F384 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f384.png);}
+.emoji.U1F381 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f381.png);}
+.emoji.U1F38B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f38b.png);}
+.emoji.U1F389 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f389.png);}
+.emoji.U1F38A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f38a.png);}
+.emoji.U1F388 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f388.png);}
+.emoji.U1F38C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f38c.png);}
+.emoji.U1F52E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f52e.png);}
+.emoji.U1F3A5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a5.png);}
+.emoji.U1F4F7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f7.png);}
+.emoji.U1F4F9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f9.png);}
+.emoji.U1F4FC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4fc.png);}
+.emoji.U1F4BF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4bf.png);}
+.emoji.U1F4C0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c0.png);}
+.emoji.U1F4BD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4bd.png);}
+.emoji.U1F4BE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4be.png);}
+.emoji.U1F4BB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4bb.png);}
+.emoji.U1F4F1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f1.png);}
+.emoji.U260E {background-image: url(/local/components/khayr/answers/emoji/emoji/260e.png);}
+.emoji.U1F4DE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4de.png);}
+.emoji.U1F4DF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4df.png);}
+.emoji.U1F4E0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e0.png);}
+.emoji.U1F4E1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e1.png);}
+.emoji.U1F4FA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4fa.png);}
+.emoji.U1F4FB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4fb.png);}
+.emoji.U1F50A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f50a.png);}
+.emoji.U1F509 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f509.png);}
+.emoji.U1F508 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f508.png);}
+.emoji.U1F507 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f507.png);}
+.emoji.U1F514 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f514.png);}
+.emoji.U1F515 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f515.png);}
+.emoji.U1F4E2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e2.png);}
+.emoji.U1F4E3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e3.png);}
+.emoji.U23F3 {background-image: url(/local/components/khayr/answers/emoji/emoji/23f3.png);}
+.emoji.U231B {background-image: url(/local/components/khayr/answers/emoji/emoji/231b.png);}
+.emoji.U23F0 {background-image: url(/local/components/khayr/answers/emoji/emoji/23f0.png);}
+.emoji.U231A {background-image: url(/local/components/khayr/answers/emoji/emoji/231a.png);}
+.emoji.U1F513 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f513.png);}
+.emoji.U1F512 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f512.png);}
+.emoji.U1F50F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f50f.png);}
+.emoji.U1F510 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f510.png);}
+.emoji.U1F511 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f511.png);}
+.emoji.U1F50E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f50e.png);}
+.emoji.U1F4A1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a1.png);}
+.emoji.U1F526 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f526.png);}
+.emoji.U1F506 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f506.png);}
+.emoji.U1F505 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f505.png);}
+.emoji.U1F50C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f50c.png);}
+.emoji.U1F50B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f50b.png);}
+.emoji.U1F50D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f50d.png);}
+.emoji.U1F6C1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6c1.png);}
+.emoji.U1F6C0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6c0.png);}
+.emoji.U1F6BF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6bf.png);}
+.emoji.U1F6BD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6bd.png);}
+.emoji.U1F527 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f527.png);}
+.emoji.U1F529 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f529.png);}
+.emoji.U1F528 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f528.png);}
+.emoji.U1F6AA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6aa.png);}
+.emoji.U1F6AC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6ac.png);}
+.emoji.U1F4A3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a3.png);}
+.emoji.U1F52B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f52b.png);}
+.emoji.U1F52A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f52a.png);}
+.emoji.U1F48A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f48a.png);}
+.emoji.U1F489 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f489.png);}
+.emoji.U1F4B0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b0.png);}
+.emoji.U1F4B4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b4.png);}
+.emoji.U1F4B5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b5.png);}
+.emoji.U1F4B7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b7.png);}
+.emoji.U1F4B6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b6.png);}
+.emoji.U1F4B3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b3.png);}
+.emoji.U1F4B8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b8.png);}
+.emoji.U1F4F2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f2.png);}
+.emoji.U1F4E7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e7.png);}
+.emoji.U1F4E5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e5.png);}
+.emoji.U1F4E4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e4.png);}
+.emoji.U2709 {background-image: url(/local/components/khayr/answers/emoji/emoji/2709.png);}
+.emoji.U1F4E9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e9.png);}
+.emoji.U1F4E8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e8.png);}
+.emoji.U1F4EF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ef.png);}
+.emoji.U1F4EB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4eb.png);}
+.emoji.U1F4EA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ea.png);}
+.emoji.U1F4EC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ec.png);}
+.emoji.U1F4ED {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ed.png);}
+.emoji.U1F4EE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ee.png);}
+.emoji.U1F4E6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4e6.png);}
+.emoji.U1F4DD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4dd.png);}
+.emoji.U1F4C4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c4.png);}
+.emoji.U1F4C3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c3.png);}
+.emoji.U1F4D1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d1.png);}
+.emoji.U1F4CA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ca.png);}
+.emoji.U1F4C8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c8.png);}
+.emoji.U1F4C9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c9.png);}
+.emoji.U1F4DC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4dc.png);}
+.emoji.U1F4CB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4cb.png);}
+.emoji.U1F4C5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c5.png);}
+.emoji.U1F4C6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c6.png);}
+.emoji.U1F4C7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c7.png);}
+.emoji.U1F4C1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c1.png);}
+.emoji.U1F4C2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4c2.png);}
+.emoji.U2702 {background-image: url(/local/components/khayr/answers/emoji/emoji/2702.png);}
+.emoji.U1F4CC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4cc.png);}
+.emoji.U1F4CE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ce.png);}
+.emoji.U2712 {background-image: url(/local/components/khayr/answers/emoji/emoji/2712.png);}
+.emoji.U270F {background-image: url(/local/components/khayr/answers/emoji/emoji/270f.png);}
+.emoji.U1F4CF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4cf.png);}
+.emoji.U1F4D0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d0.png);}
+.emoji.U1F4D5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d5.png);}
+.emoji.U1F4D7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d7.png);}
+.emoji.U1F4D8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d8.png);}
+.emoji.U1F4D9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d9.png);}
+.emoji.U1F4D3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d3.png);}
+.emoji.U1F4D4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d4.png);}
+.emoji.U1F4D2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d2.png);}
+.emoji.U1F4DA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4da.png);}
+.emoji.U1F4D6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4d6.png);}
+.emoji.U1F516 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f516.png);}
+.emoji.U1F4DB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4db.png);}
+.emoji.U1F52C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f52c.png);}
+.emoji.U1F52D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f52d.png);}
+.emoji.U1F4F0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f0.png);}
+
+.emoji.U1F49B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f49b.png);}
+.emoji.U1F499 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f499.png);}
+.emoji.U1F49C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f49c.png);}
+.emoji.U1F49A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f49a.png);}
+.emoji.U2764 {background-image: url(/local/components/khayr/answers/emoji/emoji/2764.png);}
+.emoji.U1F494 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f494.png);}
+.emoji.U1F497 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f497.png);}
+.emoji.U1F493 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f493.png);}
+.emoji.U1F495 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f495.png);}
+.emoji.U1F496 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f496.png);}
+.emoji.U1F49E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f49e.png);}
+.emoji.U1F498 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f498.png);}
+.emoji.U1F48C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f48c.png);}
+.emoji.U1F48B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f48b.png);}
+.emoji.U1F48D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f48d.png);}
+.emoji.U1F48E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f48e.png);}
+.emoji.U1F464 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f464.png);}
+.emoji.U1F465 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f465.png);}
+.emoji.U1F4AC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ac.png);}
+.emoji.U1F463 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f463.png);}
+.emoji.U1F4AD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ad.png);}
+.emoji.U1F197 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f197.png);}
+.emoji.U1F500 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f500.png);}
+.emoji.U1F501 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f501.png);}
+.emoji.U1F502 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f502.png);}
+.emoji.U1F195 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f195.png);}
+.emoji.U1F199 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f199.png);}
+.emoji.U1F192 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f192.png);}
+.emoji.U1F193 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f193.png);}
+.emoji.U1F196 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f196.png);}
+.emoji.U1F4F6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f6.png);}
+.emoji.U1F3A6 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3a6.png);}
+.emoji.U1F201 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f201.png);}
+.emoji.U1F22F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f22f.png);}
+.emoji.U1F233 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f233.png);}
+.emoji.U1F235 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f235.png);}
+.emoji.U1F234 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f234.png);}
+.emoji.U1F232 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f232.png);}
+.emoji.U1F250 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f250.png);}
+.emoji.U1F239 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f239.png);}
+.emoji.U1F23A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f23a.png);}
+.emoji.U1F236 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f236.png);}
+.emoji.U1F21A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f21a.png);}
+.emoji.U1F6BB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6bb.png);}
+.emoji.U1F6B9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b9.png);}
+.emoji.U1F6BA {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6ba.png);}
+.emoji.U1F6BC {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6bc.png);}
+.emoji.U1F6BE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6be.png);}
+.emoji.U1F6B0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b0.png);}
+.emoji.U1F6AE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6ae.png);}
+.emoji.U1F17F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f17f.png);}
+.emoji.U267F {background-image: url(/local/components/khayr/answers/emoji/emoji/267f.png);}
+.emoji.U1F6AD {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6ad.png);}
+.emoji.U1F237 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f237.png);}
+.emoji.U1F238 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f238.png);}
+.emoji.U1F202 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f202.png);}
+.emoji.U24C2 {background-image: url(/local/components/khayr/answers/emoji/emoji/24c2.png);}
+.emoji.U1F6C2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6c2.png);}
+.emoji.U1F6C4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6c4.png);}
+.emoji.U1F6C5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6c5.png);}
+.emoji.U1F6C3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6c3.png);}
+.emoji.U1F251 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f251.png);}
+.emoji.U3299 {background-image: url(/local/components/khayr/answers/emoji/emoji/3299.png);}
+.emoji.U3297 {background-image: url(/local/components/khayr/answers/emoji/emoji/3297.png);}
+.emoji.U1F191 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f191.png);}
+.emoji.U1F198 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f198.png);}
+.emoji.U1F194 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f194.png);}
+.emoji.U1F6AB {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6ab.png);}
+.emoji.U1F51E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f51e.png);}
+.emoji.U1F4F5 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f5.png);}
+.emoji.U1F6AF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6af.png);}
+.emoji.U1F6B1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b1.png);}
+.emoji.U1F6B3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b3.png);}
+.emoji.U1F6B7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b7.png);}
+.emoji.U1F6B8 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f6b8.png);}
+.emoji.U26D4 {background-image: url(/local/components/khayr/answers/emoji/emoji/26d4.png);}
+.emoji.U2733 {background-image: url(/local/components/khayr/answers/emoji/emoji/2733.png);}
+.emoji.U2747 {background-image: url(/local/components/khayr/answers/emoji/emoji/2747.png);}
+.emoji.U274E {background-image: url(/local/components/khayr/answers/emoji/emoji/274e.png);}
+.emoji.U2705 {background-image: url(/local/components/khayr/answers/emoji/emoji/2705.png);}
+.emoji.U2734 {background-image: url(/local/components/khayr/answers/emoji/emoji/2734.png);}
+.emoji.U1F49F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f49f.png);}
+.emoji.U1F19A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f19a.png);}
+.emoji.U1F4F3 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f3.png);}
+.emoji.U1F4F4 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4f4.png);}
+.emoji.U1F170 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f170.png);}
+.emoji.U1F171 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f171.png);}
+.emoji.U1F18E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f18e.png);}
+.emoji.U1F17E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f17e.png);}
+.emoji.U1F4A0 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4a0.png);}
+.emoji.U27BF {background-image: url(/local/components/khayr/answers/emoji/emoji/27bf.png);}
+.emoji.U267B {background-image: url(/local/components/khayr/answers/emoji/emoji/267b.png);}
+.emoji.U2648 {background-image: url(/local/components/khayr/answers/emoji/emoji/2648.png);}
+.emoji.U2649 {background-image: url(/local/components/khayr/answers/emoji/emoji/2649.png);}
+.emoji.U264A {background-image: url(/local/components/khayr/answers/emoji/emoji/264a.png);}
+.emoji.U264B {background-image: url(/local/components/khayr/answers/emoji/emoji/264b.png);}
+.emoji.U264C {background-image: url(/local/components/khayr/answers/emoji/emoji/264c.png);}
+.emoji.U264D {background-image: url(/local/components/khayr/answers/emoji/emoji/264d.png);}
+.emoji.U264E {background-image: url(/local/components/khayr/answers/emoji/emoji/264e.png);}
+.emoji.U264F {background-image: url(/local/components/khayr/answers/emoji/emoji/264f.png);}
+.emoji.U2650 {background-image: url(/local/components/khayr/answers/emoji/emoji/2650.png);}
+.emoji.U2651 {background-image: url(/local/components/khayr/answers/emoji/emoji/2651.png);}
+.emoji.U2652 {background-image: url(/local/components/khayr/answers/emoji/emoji/2652.png);}
+.emoji.U2653 {background-image: url(/local/components/khayr/answers/emoji/emoji/2653.png);}
+.emoji.U26CE {background-image: url(/local/components/khayr/answers/emoji/emoji/26ce.png);}
+.emoji.U1F52F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f52f.png);}
+.emoji.U1F3E7 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f3e7.png);}
+.emoji.U1F4B9 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b9.png);}
+.emoji.U1F4B2 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b2.png);}
+.emoji.U1F4B1 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4b1.png);}
+.emoji.UA9 {background-image: url(/local/components/khayr/answers/emoji/emoji/a9.png);}
+.emoji.UAE {background-image: url(/local/components/khayr/answers/emoji/emoji/ae.png);}
+.emoji.U2122 {background-image: url(/local/components/khayr/answers/emoji/emoji/2122.png);}
+.emoji.U274C {background-image: url(/local/components/khayr/answers/emoji/emoji/274c.png);}
+.emoji.U203C {background-image: url(/local/components/khayr/answers/emoji/emoji/203c.png);}
+.emoji.U2049 {background-image: url(/local/components/khayr/answers/emoji/emoji/2049.png);}
+.emoji.U2757 {background-image: url(/local/components/khayr/answers/emoji/emoji/2757.png);}
+.emoji.U2753 {background-image: url(/local/components/khayr/answers/emoji/emoji/2753.png);}
+.emoji.U2755 {background-image: url(/local/components/khayr/answers/emoji/emoji/2755.png);}
+.emoji.U2754 {background-image: url(/local/components/khayr/answers/emoji/emoji/2754.png);}
+.emoji.U2B55 {background-image: url(/local/components/khayr/answers/emoji/emoji/2b55.png);}
+.emoji.U1F51D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f51d.png);}
+.emoji.U1F51A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f51a.png);}
+.emoji.U1F519 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f519.png);}
+.emoji.U1F51B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f51b.png);}
+.emoji.U1F51C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f51c.png);}
+.emoji.U1F503 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f503.png);}
+.emoji.U1F55B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f55b.png);}
+.emoji.U1F567 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f567.png);}
+.emoji.U1F550 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f550.png);}
+.emoji.U1F55C {background-image: url(/local/components/khayr/answers/emoji/emoji/1f55c.png);}
+.emoji.U1F551 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f551.png);}
+.emoji.U1F55D {background-image: url(/local/components/khayr/answers/emoji/emoji/1f55d.png);}
+.emoji.U1F552 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f552.png);}
+.emoji.U1F55E {background-image: url(/local/components/khayr/answers/emoji/emoji/1f55e.png);}
+.emoji.U1F553 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f553.png);}
+.emoji.U1F55F {background-image: url(/local/components/khayr/answers/emoji/emoji/1f55f.png);}
+.emoji.U1F554 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f554.png);}
+.emoji.U1F560 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f560.png);}
+.emoji.U1F555 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f555.png);}
+.emoji.U1F556 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f556.png);}
+.emoji.U1F557 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f557.png);}
+.emoji.U1F558 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f558.png);}
+.emoji.U1F559 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f559.png);}
+.emoji.U1F55A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f55a.png);}
+.emoji.U1F561 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f561.png);}
+.emoji.U1F562 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f562.png);}
+.emoji.U1F563 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f563.png);}
+.emoji.U1F564 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f564.png);}
+.emoji.U1F565 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f565.png);}
+.emoji.U1F566 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f566.png);}
+.emoji.U2716 {background-image: url(/local/components/khayr/answers/emoji/emoji/2716.png);}
+.emoji.U2795 {background-image: url(/local/components/khayr/answers/emoji/emoji/2795.png);}
+.emoji.U2796 {background-image: url(/local/components/khayr/answers/emoji/emoji/2796.png);}
+.emoji.U2797 {background-image: url(/local/components/khayr/answers/emoji/emoji/2797.png);}
+.emoji.U2660 {background-image: url(/local/components/khayr/answers/emoji/emoji/2660.png);}
+.emoji.U2665 {background-image: url(/local/components/khayr/answers/emoji/emoji/2665.png);}
+.emoji.U2663 {background-image: url(/local/components/khayr/answers/emoji/emoji/2663.png);}
+.emoji.U2666 {background-image: url(/local/components/khayr/answers/emoji/emoji/2666.png);}
+.emoji.U1F4AE {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4ae.png);}
+.emoji.U1F4AF {background-image: url(/local/components/khayr/answers/emoji/emoji/1f4af.png);}
+.emoji.U2714 {background-image: url(/local/components/khayr/answers/emoji/emoji/2714.png);}
+.emoji.U2611 {background-image: url(/local/components/khayr/answers/emoji/emoji/2611.png);}
+.emoji.U1F518 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f518.png);}
+.emoji.U1F517 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f517.png);}
+.emoji.U27B0 {background-image: url(/local/components/khayr/answers/emoji/emoji/27b0.png);}
+.emoji.U3030 {background-image: url(/local/components/khayr/answers/emoji/emoji/3030.png);}
+.emoji.U303D {background-image: url(/local/components/khayr/answers/emoji/emoji/303d.png);}
+.emoji.U1F531 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f531.png);}
+.emoji.U25FC {background-image: url(/local/components/khayr/answers/emoji/emoji/25fc.png);}
+.emoji.U25FB {background-image: url(/local/components/khayr/answers/emoji/emoji/25fb.png);}
+.emoji.U25FE {background-image: url(/local/components/khayr/answers/emoji/emoji/25fe.png);}
+.emoji.U25FD {background-image: url(/local/components/khayr/answers/emoji/emoji/25fd.png);}
+.emoji.U25AA {background-image: url(/local/components/khayr/answers/emoji/emoji/25aa.png);}
+.emoji.U25AB {background-image: url(/local/components/khayr/answers/emoji/emoji/25ab.png);}
+.emoji.U1F53A {background-image: url(/local/components/khayr/answers/emoji/emoji/1f53a.png);}
+.emoji.U1F532 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f532.png);}
+.emoji.U1F533 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f533.png);}
+.emoji.U26AB {background-image: url(/local/components/khayr/answers/emoji/emoji/26ab.png);}
+.emoji.U26AA {background-image: url(/local/components/khayr/answers/emoji/emoji/26aa.png);}
+.emoji.U1F534 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f534.png);}
+.emoji.U1F535 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f535.png);}
+.emoji.U1F53B {background-image: url(/local/components/khayr/answers/emoji/emoji/1f53b.png);}
+.emoji.U2B1C {background-image: url(/local/components/khayr/answers/emoji/emoji/2b1c.png);}
+.emoji.U2B1B {background-image: url(/local/components/khayr/answers/emoji/emoji/2b1b.png);}
+.emoji.U1F536 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f536.png);}
+.emoji.U1F537 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f537.png);}
+.emoji.U1F538 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f538.png);}
+.emoji.U1F539 {background-image: url(/local/components/khayr/answers/emoji/emoji/1f539.png);}
+
+/* gif  standart */
+.gif.ab {background-image: url(/local/components/khayr/answers/emoji/standart/ab.gif);}
+.gif.ad {background-image: url(/local/components/khayr/answers/emoji/standart/ad123.gif);}
+.gif.ac {background-image: url(/local/components/khayr/answers/emoji/standart/ac.gif);}
+.gif.ae {background-image: url(/local/components/khayr/answers/emoji/standart/ae.gif);}
+.gif.af {background-image: url(/local/components/khayr/answers/emoji/standart/af.gif);}
+.gif.ag {background-image: url(/local/components/khayr/answers/emoji/standart/ag.gif);}
+.gif.ah {background-image: url(/local/components/khayr/answers/emoji/standart/ah.gif);}
+.gif.aa {background-image: url(/local/components/khayr/answers/emoji/standart/aa.gif);}
+.gif.ak {background-image: url(/local/components/khayr/answers/emoji/standart/ak.gif);}
+.gif.ai {background-image: url(/local/components/khayr/answers/emoji/standart/ai.gif);}
+.gif.aj {background-image: url(/local/components/khayr/answers/emoji/standart/aj.gif);}
+.gif.al {background-image: url(/local/components/khayr/answers/emoji/standart/al.gif);}
+.gif.am {background-image: url(/local/components/khayr/answers/emoji/standart/am.gif);}
+.gif.an {background-image: url(/local/components/khayr/answers/emoji/standart/an.gif);}
+.gif.ao {background-image: url(/local/components/khayr/answers/emoji/standart/ao.gif);}
+.gif.ap {background-image: url(/local/components/khayr/answers/emoji/standart/ap.gif);}
+.gif.aq {background-image: url(/local/components/khayr/answers/emoji/standart/aq.gif);}
+.gif.ar {background-image: url(/local/components/khayr/answers/emoji/standart/ar.gif);}
+.gif.as {background-image: url(/local/components/khayr/answers/emoji/standart/as.gif);}
+.gif.at {background-image: url(/local/components/khayr/answers/emoji/standart/at.gif);}
+.gif.au {background-image: url(/local/components/khayr/answers/emoji/standart/au.gif);}
+.gif.av {background-image: url(/local/components/khayr/answers/emoji/standart/av.gif);}
+.gif.aw {background-image: url(/local/components/khayr/answers/emoji/standart/aw.gif);}
+.gif.ax {background-image: url(/local/components/khayr/answers/emoji/standart/ax.gif);}
+.gif.ay {background-image: url(/local/components/khayr/answers/emoji/standart/ay.gif);}
+.gif.az {background-image: url(/local/components/khayr/answers/emoji/standart/az.gif);}
+.gif.ba {background-image: url(/local/components/khayr/answers/emoji/standart/ba.gif);}
+.gif.bb {background-image: url(/local/components/khayr/answers/emoji/standart/bb.gif);}
+.gif.bc {background-image: url(/local/components/khayr/answers/emoji/standart/bc.gif);}
+.gif.bd {background-image: url(/local/components/khayr/answers/emoji/standart/bd.gif);}
+.gif.be {background-image: url(/local/components/khayr/answers/emoji/standart/be.gif);}
+.gif.bf {background-image: url(/local/components/khayr/answers/emoji/standart/bf.gif);}
+.gif.bg {background-image: url(/local/components/khayr/answers/emoji/standart/bg.gif);}
+.gif.bh {background-image: url(/local/components/khayr/answers/emoji/standart/bh.gif);}
+.gif.bi {background-image: url(/local/components/khayr/answers/emoji/standart/bi.gif);}
+.gif.bj {background-image: url(/local/components/khayr/answers/emoji/standart/bj.gif);}
+.gif.bk {background-image: url(/local/components/khayr/answers/emoji/standart/bk.gif);}
+.gif.bl {background-image: url(/local/components/khayr/answers/emoji/standart/bl.gif);}
+.gif.bm {background-image: url(/local/components/khayr/answers/emoji/standart/bm.gif);}
+.gif.bn {background-image: url(/local/components/khayr/answers/emoji/standart/bn.gif);}
+.gif.bo {background-image: url(/local/components/khayr/answers/emoji/standart/bo.gif);}
+.gif.bp {background-image: url(/local/components/khayr/answers/emoji/standart/bp.gif);}
+.gif.bq {background-image: url(/local/components/khayr/answers/emoji/standart/bq.gif);}
+.gif.br {background-image: url(/local/components/khayr/answers/emoji/standart/br.gif);}
+.gif.bs {background-image: url(/local/components/khayr/answers/emoji/standart/bs.gif);}
+.gif.bt {background-image: url(/local/components/khayr/answers/emoji/standart/bt.gif);}
+.gif.bu {background-image: url(/local/components/khayr/answers/emoji/standart/bu.gif);}
+.gif.bv {background-image: url(/local/components/khayr/answers/emoji/standart/bv.gif);}
+.gif.bw {background-image: url(/local/components/khayr/answers/emoji/standart/bw.gif);}
+
+/* gif  madhouse */
+.gif.sm_alcoholic {background-image: url(/local/components/khayr/answers/emoji/madhouse/alcoholic.gif);}
+.gif.sm_crazy_pilot {background-image: url(/local/components/khayr/answers/emoji/madhouse/crazy_pilot.gif);}
+.gif.sm_dash1 {background-image: url(/local/components/khayr/answers/emoji/madhouse/dash1.gif);}
+.gif.sm_dash2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/dash2.gif);}
+.gif.sm_dash3 {background-image: url(/local/components/khayr/answers/emoji/madhouse/dash3.gif);}
+.gif.sm_drag {background-image: url(/local/components/khayr/answers/emoji/madhouse/drag.gif);}
+.gif.sm_focus {background-image: url(/local/components/khayr/answers/emoji/madhouse/focus.gif);}
+.gif.sm_gamer1 {background-image: url(/local/components/khayr/answers/emoji/madhouse/gamer1.gif);}
+.gif.sm_gamer2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/gamer2.gif);}
+.gif.sm_gamer3 {background-image: url(/local/components/khayr/answers/emoji/madhouse/gamer3.gif);}
+.gif.sm_gamer4 {background-image: url(/local/components/khayr/answers/emoji/madhouse/gamer4.gif);}
+.gif.sm_girl_crazy {background-image: url(/local/components/khayr/answers/emoji/madhouse/girl_crazy.gif);}
+.gif.sm_girl_hospital {background-image: url(/local/components/khayr/answers/emoji/madhouse/girl_hospital.gif);}
+.gif.sm_girl_wacko {background-image: url(/local/components/khayr/answers/emoji/madhouse/girl_wacko.gif);}
+.gif.sm_hang1 {background-image: url(/local/components/khayr/answers/emoji/madhouse/hang1.gif);}
+.gif.sm_hang2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/hang2.gif);}
+.gif.sm_hang3 {background-image: url(/local/components/khayr/answers/emoji/madhouse/hang3.gif);}
+.gif.sm_hunter {background-image: url(/local/components/khayr/answers/emoji/madhouse/hunter.gif);}
+.gif.sm_locomotive {background-image: url(/local/components/khayr/answers/emoji/madhouse/locomotive.gif);}
+.gif.sm_mail1 {background-image: url(/local/components/khayr/answers/emoji/madhouse/mail1.gif);}
+.gif.sm_man_in_love {background-image: url(/local/components/khayr/answers/emoji/madhouse/man_in_love.gif);}
+.gif.sm_on_the_quiet2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/on_the_quiet2.gif);}
+.gif.sm_on_the_quiet {background-image: url(/local/components/khayr/answers/emoji/madhouse/on_the_quiet.gif);}
+.gif.sm_pilot {background-image: url(/local/components/khayr/answers/emoji/madhouse/pilot.gif);}
+.gif.sm_prankster2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/prankster2.gif);}
+.gif.sm_prankster {background-image: url(/local/components/khayr/answers/emoji/madhouse/prankster.gif);}
+.gif.sm_russian_roulette {background-image: url(/local/components/khayr/answers/emoji/madhouse/russian_roulette.gif);}
+.gif.sm_sarcastic_blum {background-image: url(/local/components/khayr/answers/emoji/madhouse/sarcastic_blum.gif);}
+.gif.sm_sarcastic {background-image: url(/local/components/khayr/answers/emoji/madhouse/sarcastic.gif);}
+.gif.sm_sarcastic_hand {background-image: url(/local/components/khayr/answers/emoji/madhouse/sarcastic_hand.gif);}
+.gif.sm_slow_en {background-image: url(/local/components/khayr/answers/emoji/madhouse/slow_en.gif);}
+.gif.sm_slow {background-image: url(/local/components/khayr/answers/emoji/madhouse/slow.gif);}
+.gif.sm_stinker {background-image: url(/local/components/khayr/answers/emoji/madhouse/stinker.gif);}
+.gif.sm_suicide2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/suicide2.gif);}
+.gif.sm_suicide_fool_edit {background-image: url(/local/components/khayr/answers/emoji/madhouse/suicide_fool_edit.gif);}
+.gif.sm_suicide {background-image: url(/local/components/khayr/answers/emoji/madhouse/suicide.gif);}
+.gif.sm_tease {background-image: url(/local/components/khayr/answers/emoji/madhouse/tease.gif);}
+.gif.sm_telephone {background-image: url(/local/components/khayr/answers/emoji/madhouse/telephone.gif);}
+.gif.sm_to_become_senile {background-image: url(/local/components/khayr/answers/emoji/madhouse/to_become_senile.gif);}
+.gif.sm_to_pick_ones_nose2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/to_pick_ones_nose2.gif);}
+.gif.sm_to_pick_ones_nose3 {background-image: url(/local/components/khayr/answers/emoji/madhouse/to_pick_ones_nose3.gif);}
+.gif.sm_to_pick_ones_nose_eat {background-image: url(/local/components/khayr/answers/emoji/madhouse/to_pick_ones_nose_eat.gif);}
+.gif.sm_to_pick_ones_nose {background-image: url(/local/components/khayr/answers/emoji/madhouse/to_pick_ones_nose.gif);}
+.gif.sm_wacko2 {background-image: url(/local/components/khayr/answers/emoji/madhouse/wacko2.gif);}
+.gif.sm_wacko {background-image: url(/local/components/khayr/answers/emoji/madhouse/wacko.gif);}
+
+/* gif  he_and_she */
+.gif.sm_buba_phone {background-image: url(/local/components/khayr/answers/emoji/he_and_she/buba_phone.gif);}
+.gif.sm_curtsey {background-image: url(/local/components/khayr/answers/emoji/he_and_she/curtsey.gif);}
+.gif.sm_feminist_en {background-image: url(/local/components/khayr/answers/emoji/he_and_she/feminist_en.gif);}
+.gif.sm_feminist {background-image: url(/local/components/khayr/answers/emoji/he_and_she/feminist.gif);}
+.gif.sm_first_move {background-image: url(/local/components/khayr/answers/emoji/he_and_she/first_move.gif);}
+.gif.sm_flirt {background-image: url(/local/components/khayr/answers/emoji/he_and_she/flirt.gif);}
+.gif.sm_girl_blum2 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_blum2.gif);}
+.gif.sm_girl_blum {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_blum.gif);}
+.gif.sm_girl_cray2 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_cray2.gif);}
+.gif.sm_girl_cray3 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_cray3.gif);}
+.gif.sm_girl_cray {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_cray.gif);}
+.gif.sm_girl_dance {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_dance.gif);}
+.gif.sm_girl_devil {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_devil.gif);}
+.gif.sm_girl_drink1 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_drink1.gif);}
+.gif.sm_girl_drink2 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_drink2.gif);}
+.gif.sm_girl_drink3 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_drink3.gif);}
+.gif.sm_girl_drink4 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_drink4.gif);}
+.gif.sm_girl_haha {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_haha.gif);}
+.gif.sm_girl_hide {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_hide.gif);}
+.gif.sm_girl_impossible {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_impossible.gif);}
+.gif.sm_girl_in_love {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_in_love.gif);}
+.gif.sm_girl_mad {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_mad.gif);}
+.gif.sm_girl_pinkglassesf {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_pinkglassesf.gif);}
+.gif.sm_girl_prepare_fish {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_prepare_fish.gif);}
+.gif.sm_girl_sad {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_sad.gif);}
+.gif.sm_girl_sigh {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_sigh.gif);}
+.gif.sm_girl_smile {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_smile.gif);}
+.gif.sm_girl_to_take_umbrage2 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_to_take_umbrage2.gif);}
+.gif.sm_girl_to_take_umbrage {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_to_take_umbrage.gif);}
+.gif.sm_girl_wink {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_wink.gif);}
+.gif.sm_girl_witch {background-image: url(/local/components/khayr/answers/emoji/he_and_she/girl_witch.gif);}
+.gif.sm_give_heart {background-image: url(/local/components/khayr/answers/emoji/he_and_she/give_heart.gif);}
+.gif.sm_give_rose {background-image: url(/local/components/khayr/answers/emoji/he_and_she/give_rose.gif);}
+.gif.sm_hysteric {background-image: url(/local/components/khayr/answers/emoji/he_and_she/hysteric.gif);}
+.gif.sm_kiss2 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/kiss2.gif);}
+.gif.sm_kiss3 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/kiss3.gif);}
+.gif.sm_parting2 {background-image: url(/local/components/khayr/answers/emoji/he_and_she/parting2.gif);}
+.gif.sm_parting {background-image: url(/local/components/khayr/answers/emoji/he_and_she/parting.gif);}
+.gif.sm_spruce_up {background-image: url(/local/components/khayr/answers/emoji/he_and_she/spruce_up.gif);}
+.gif.sm_tender {background-image: url(/local/components/khayr/answers/emoji/he_and_she/tender.gif);}
+.gif.sm_to_babruysk {background-image: url(/local/components/khayr/answers/emoji/he_and_she/to_babruysk.gif);}
+
+/* gif  personal */
+.gif.sm_to_keep_order {background-image: url(/local/components/khayr/answers/emoji/personal/to_keep_order.gif);}
+.gif.sm_wild {background-image: url(/local/components/khayr/answers/emoji/personal/wild.gif);}
+.gif.sm_blind {background-image: url(/local/components/khayr/answers/emoji/personal/blind.gif);}
+.gif.sm_beta {background-image: url(/local/components/khayr/answers/emoji/personal/beta.gif);}
+.gif.sm_neo {background-image: url(/local/components/khayr/answers/emoji/personal/neo.gif);}
+.gif.sm_buba {background-image: url(/local/components/khayr/answers/emoji/personal/buba.gif);}
+.gif.sm_mamba {background-image: url(/local/components/khayr/answers/emoji/personal/mamba.gif);}
+.gif.sm_music2 {background-image: url(/local/components/khayr/answers/emoji/personal/music2.gif);}
+.gif.sm_music {background-image: url(/local/components/khayr/answers/emoji/personal/music.gif);}
+.gif.sm_pogranichnik {background-image: url(/local/components/khayr/answers/emoji/personal/pogranichnik.gif);}
+.gif.sm_angel {background-image: url(/local/components/khayr/answers/emoji/personal/angel.gif);}
+.gif.sm_new_russian {background-image: url(/local/components/khayr/answers/emoji/personal/new_russian.gif);}
+.gif.sm_triniti {background-image: url(/local/components/khayr/answers/emoji/personal/triniti.gif);}
+.gif.sm_snegurochka {background-image: url(/local/components/khayr/answers/emoji/personal/snegurochka.gif);}
+.gif.sm_superman {background-image: url(/local/components/khayr/answers/emoji/personal/superman.gif);}
+.gif.sm_tommy {background-image: url(/local/components/khayr/answers/emoji/personal/tommy.gif);}
+.gif.sm_scenic {background-image: url(/local/components/khayr/answers/emoji/personal/scenic.gif);}
+.gif.sm_ded_snegurochka2 {background-image: url(/local/components/khayr/answers/emoji/personal/ded_snegurochka2.gif);}
+.gif.sm_ded_snegurochka {background-image: url(/local/components/khayr/answers/emoji/personal/ded_snegurochka.gif);}
+.gif.sm_hi {background-image: url(/local/components/khayr/answers/emoji/personal/hi.gif);}
+.gif.sm_morpheus {background-image: url(/local/components/khayr/answers/emoji/personal/morpheus.gif);}
+.gif.sm_paint2 {background-image: url(/local/components/khayr/answers/emoji/personal/paint2.gif);}
+.gif.sm_paint3 {background-image: url(/local/components/khayr/answers/emoji/personal/paint3.gif);}
+.gif.sm_paint {background-image: url(/local/components/khayr/answers/emoji/personal/paint.gif);}
+.gif.sm_rap {background-image: url(/local/components/khayr/answers/emoji/personal/rap.gif);}
+.gif.sm_santa2 {background-image: url(/local/components/khayr/answers/emoji/personal/santa2.gif);}
+.gif.sm_santa3 {background-image: url(/local/components/khayr/answers/emoji/personal/santa3.gif);}
+.gif.sm_santa {background-image: url(/local/components/khayr/answers/emoji/personal/santa.gif);}
+.gif.sm_big_boss {background-image: url(/local/components/khayr/answers/emoji/personal/big_boss.gif);}
+.gif.sm_padonak {background-image: url(/local/components/khayr/answers/emoji/personal/padonak.gif);}
+.gif.sm_patsak {background-image: url(/local/components/khayr/answers/emoji/personal/patsak.gif);}
+.gif.sm_sun_bespectacled {background-image: url(/local/components/khayr/answers/emoji/personal/sun_bespectacled.gif);}
+.gif.sm_superman2 {background-image: url(/local/components/khayr/answers/emoji/personal/superman2.gif);}
+.gif.sm_brunette {background-image: url(/local/components/khayr/answers/emoji/personal/brunette.gif);}
+.gif.sm_comando {background-image: url(/local/components/khayr/answers/emoji/personal/comando.gif);}
+.gif.sm_diablo {background-image: url(/local/components/khayr/answers/emoji/personal/diablo.gif);}
+.gif.sm_meowth {background-image: url(/local/components/khayr/answers/emoji/personal/meowth.gif);}
+.gif.sm_rabbi {background-image: url(/local/components/khayr/answers/emoji/personal/rabbi.gif);}
+.gif.sm_pooh_honey {background-image: url(/local/components/khayr/answers/emoji/personal/pooh_honey.gif);}
+.gif.sm_pooh_lol {background-image: url(/local/components/khayr/answers/emoji/personal/pooh_lol.gif);}
+.gif.sm_beach {background-image: url(/local/components/khayr/answers/emoji/personal/beach.gif);}
+.gif.sm_pioneer {background-image: url(/local/components/khayr/answers/emoji/personal/pioneer.gif);}
+.gif.sm_pioneer_smoke {background-image: url(/local/components/khayr/answers/emoji/personal/pioneer_smoke.gif);}
+.gif.sm_scout_en {background-image: url(/local/components/khayr/answers/emoji/personal/scout_en.gif);}
+.gif.sm_scout {background-image: url(/local/components/khayr/answers/emoji/personal/scout.gif);}
+.gif.sm_vinsent {background-image: url(/local/components/khayr/answers/emoji/personal/vinsent.gif);}
+.gif.sm_ded_moroz {background-image: url(/local/components/khayr/answers/emoji/personal/ded_moroz.gif);}
+.gif.sm_pooh_birth_day {background-image: url(/local/components/khayr/answers/emoji/personal/pooh_birth_day.gif);}
+.gif.sm_pooh {background-image: url(/local/components/khayr/answers/emoji/personal/pooh.gif);}
+.gif.sm_pooh_go {background-image: url(/local/components/khayr/answers/emoji/personal/pooh_go.gif);}
+.gif.sm_moil {background-image: url(/local/components/khayr/answers/emoji/personal/moil.gif);}
+.gif.sm_pooh_door {background-image: url(/local/components/khayr/answers/emoji/personal/pooh_door.gif);}
+.gif.sm_russian {background-image: url(/local/components/khayr/answers/emoji/personal/russian.gif);}
+.gif.sm_pig_ball {background-image: url(/local/components/khayr/answers/emoji/personal/pig_ball.gif);}
+.gif.sm_pooh_on_ball {background-image: url(/local/components/khayr/answers/emoji/personal/pooh_on_ball.gif);}
+
+/* gif  sport */
+.gif.sm_aikido {background-image: url(/local/components/khayr/answers/emoji/sport/aikido.gif);}
+.gif.sm_banned {background-image: url(/local/components/khayr/answers/emoji/sport/banned.gif);}
+.gif.sm_dinamo {background-image: url(/local/components/khayr/answers/emoji/sport/dinamo.gif);}
+.gif.sm_fan_1 {background-image: url(/local/components/khayr/answers/emoji/sport/fan_1.gif);}
+.gif.sm_fans {background-image: url(/local/components/khayr/answers/emoji/sport/fans.gif);}
+.gif.sm_nhl2 {background-image: url(/local/components/khayr/answers/emoji/sport/nhl2.gif);}
+.gif.sm_nhl3 {background-image: url(/local/components/khayr/answers/emoji/sport/nhl3.gif);}
+.gif.sm_nhl_checking {background-image: url(/local/components/khayr/answers/emoji/sport/nhl_checking.gif);}
+.gif.sm_nhl_crach {background-image: url(/local/components/khayr/answers/emoji/sport/nhl_crach.gif);}
+.gif.sm_nhl_fight {background-image: url(/local/components/khayr/answers/emoji/sport/nhl_fight.gif);}
+.gif.sm_nhl {background-image: url(/local/components/khayr/answers/emoji/sport/nhl.gif);}
+.gif.sm_phi {background-image: url(/local/components/khayr/answers/emoji/sport/phi.gif);}
+.gif.sm_protest {background-image: url(/local/components/khayr/answers/emoji/sport/protest.gif);}
+.gif.sm_shablon_01 {background-image: url(/local/components/khayr/answers/emoji/sport/shablon_01.gif);}
+.gif.sm_shablon_02 {background-image: url(/local/components/khayr/answers/emoji/sport/shablon_02.gif);}
+.gif.sm_shablon_03 {background-image: url(/local/components/khayr/answers/emoji/sport/shablon_03.gif);}
+.gif.sm_shablon_04 {background-image: url(/local/components/khayr/answers/emoji/sport/shablon_04.gif);}
+.gif.sm_spartak {background-image: url(/local/components/khayr/answers/emoji/sport/spartak.gif);}
+.gif.sm_training1 {background-image: url(/local/components/khayr/answers/emoji/sport/training1.gif);}
+.gif.sm_warning2 {background-image: url(/local/components/khayr/answers/emoji/sport/warning2.gif);}
+.gif.sm_warning {background-image: url(/local/components/khayr/answers/emoji/sport/warning.gif);}
+
+/* png stickers love */
+.pngstick.st_love_angel_heart {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_angel_heart.png);}
+.pngstick.st_love_pants {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_pants.png);}
+.pngstick.st_love_arrow {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_arrow.png);}
+.pngstick.st_love_ball {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_ball.png);}
+.pngstick.st_love_balloon {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_balloon.png);}
+.pngstick.st_love_bear {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_bear.png);}
+.pngstick.st_love_bear_ball {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_bear_ball.png);}
+.pngstick.st_love_bear_heart {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_bear_heart.png);}
+.pngstick.st_love_bed {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_bed.png);}
+.pngstick.st_love_bracelets {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_bracelets.png);}
+.pngstick.st_love_bubbly {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_bubbly.png);}
+.pngstick.st_love_cake {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_cake.png);}
+.pngstick.st_love_car {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_car.png);}
+.pngstick.st_love_cherry {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_cherry.png);}
+.pngstick.st_love_cupidon {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_cupidon.png);}
+.pngstick.st_love_doughnut {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_doughnut.png);}
+.pngstick.st_love_flower {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_flower.png);}
+.pngstick.st_love_gift {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_gift.png);}
+.pngstick.st_love_glass {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_glass.png);}
+.pngstick.st_love_heck {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_heck.png);}
+.pngstick.st_love_heck_heart {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_heck_heart.png);}
+.pngstick.st_love_i_love_you {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_i_love_you.png);}
+.pngstick.st_love_iсe_cream {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_iсe_cream.png);}
+.pngstick.st_love_just_love {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_just_love.png);}
+.pngstick.st_love_kiss {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_kiss.png);}
+.pngstick.st_love_kiss_me {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_kiss_me.png);}
+.pngstick.st_love_letter {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_letter.png);}
+.pngstick.st_love_lips {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_lips.png);}
+.pngstick.st_love_mine {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_mine.png);}
+.pngstick.st_love_lock {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_lock.png);}
+.pngstick.st_love_miss_you {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_miss_you.png);}
+.pngstick.st_love_mouth {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_mouth.png);}
+.pngstick.st_love_my_love {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_my_love.png);}
+.pngstick.st_love_pin {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_pin.png);}
+.pngstick.st_love_pot {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_pot.png);}
+.pngstick.st_love_puzzle {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_puzzle.png);}
+.pngstick.st_love_ring {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_ring.png);}
+.pngstick.st_love_rose {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_rose.png);}
+.pngstick.st_love_strawberry {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_strawberry.png);}
+.pngstick.st_love_underwear {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_underwear.png);}
+.pngstick.st_love_wedding_ring {background-image: url(/local/components/khayr/answers/emoji/stickers/st_love_wedding_ring.png);}
+
+
+/* png stickers meme */
+.pngstick.st_meme_atmosfera {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_atmosfera.png);}
+.pngstick.st_meme_vzhuh {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_vzhuh.png);}
+.pngstick.st_meme_mama {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_mama.png);}
+.pngstick.st_meme_veselo {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_veselo.png);}
+.pngstick.st_meme_sramota {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_sramota.png);}
+.pngstick.st_meme_shta {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_shta.png);}
+.pngstick.st_meme_fiasco {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_fiasco.png);}
+.pngstick.st_meme_videl_vse {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_videl_vse.png);}
+.pngstick.st_meme_zakon {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_zakon.png);}
+.pngstick.st_meme_ne_tochno {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_ne_tochno.png);}
+.pngstick.st_meme_shurygina {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_shurygina.png);}
+.pngstick.st_meme_homunculus_loxodontus {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_homunculus_loxodontus.png);}
+.pngstick.st_meme_eto_norma {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_eto_norma.png);}
+.pngstick.st_meme_medved {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_medved.png);}
+.pngstick.st_meme_galustyan {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_galustyan.png);}
+.pngstick.st_meme_sialeks {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_sialeks.png);}
+.pngstick.st_meme_netvoya {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_netvoya.png);}
+.pngstick.st_meme_auto {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_auto.png);}
+.pngstick.st_meme_bol {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_bol.png);}
+.pngstick.st_meme_dno {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_dno.png);}
+.pngstick.st_meme_figase {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_figase.png);}
+.pngstick.st_meme_ne_chital {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_ne_chital.png);}
+.pngstick.st_meme_oy_vse {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_oy_vse.png);}
+.pngstick.st_meme_poem {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_poem.png);}
+.pngstick.st_meme_priunyl {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_priunyl.png);}
+.pngstick.st_meme_shikarno {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_shikarno.png);}
+.pngstick.st_meme_slogna {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_slogna.png);}
+.pngstick.st_meme_sovpad {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_sovpad.png);}
+.pngstick.st_meme_tuse {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_tuse.png);}
+.pngstick.st_meme_uzbagoysia {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_uzbagoysia.png);}
+.pngstick.st_meme_vou_vou {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_vou_vou.png);}
+.pngstick.st_meme_za_lubov {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_za_lubov.png);}
+.pngstick.st_meme_druz {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_druz.png);}
+.pngstick.st_meme_gruzin {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_gruzin.png);}
+.pngstick.st_meme_nespish {background-image: url(/local/components/khayr/answers/emoji/stickers/st_meme_nespish.png);}
+
+
+/* png stickers cartoon */
+.pngstick.st_cartoon_kot {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_kot.png);}
+.pngstick.st_cartoon_matroskin {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_matroskin.png);}
+.pngstick.st_cartoon_gav {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_gav.png);}
+.pngstick.st_cartoon_carlson_plyushki {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_carlson_plyushki.png);}
+.pngstick.st_cartoon_po_lubvi {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_po_lubvi.png);}
+.pngstick.st_cartoon_ia {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_ia.png);}
+.pngstick.st_cartoon_goodbye {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_goodbye.png);}
+.pngstick.st_cartoon_leopold {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_leopold.png);}
+.pngstick.st_cartoon_pooh {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_pooh.png);}
+.pngstick.st_cartoon_nupogodi {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_nupogodi.png);}
+.pngstick.st_cartoon_zahodi {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_zahodi.png);}
+.pngstick.st_cartoon_udav {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_udav.png);}
+.pngstick.st_cartoon_vodyanoy {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_vodyanoy.png);}
+.pngstick.st_cartoon_carlson_man {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_carlson_man.png);}
+.pngstick.st_cartoon_vovka {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_vovka.png);}
+.pngstick.st_cartoon_malovato {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_malovato.png);}
+.pngstick.st_cartoon_volk {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cartoon_volk.png);}
+
+
+/* png stickers kitties */
+.pngstick.st_cat_acrobat {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_acrobat.png);}
+.pngstick.st_cat_banjo {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_banjo.png);}
+.pngstick.st_cat_birdhouse {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_birdhouse.png);}
+.pngstick.st_cat_box {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_box.png);}
+.pngstick.st_cat_cage {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_cage.png);}
+.pngstick.st_cat_cart {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_cart.png);}
+.pngstick.st_cat_clean {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_clean.png);}
+.pngstick.st_cat_cupid {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_cupid.png);}
+.pngstick.st_cat_drunk {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_drunk.png);}
+.pngstick.st_cat_eyes {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_eyes.png);}
+.pngstick.st_cat_fight {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_fight.png);}
+.pngstick.st_cat_fish {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_fish.png);}
+.pngstick.st_cat_food {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_food.png);}
+.pngstick.st_cat_fridge {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_fridge.png);}
+.pngstick.st_cat_gift {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_gift.png);}
+.pngstick.st_cat_grumpy {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_grumpy.png);}
+.pngstick.st_cat_hiss {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_hiss.png);}
+.pngstick.st_cat_hungry {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_hungry.png);}
+.pngstick.st_cat_lady {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_lady.png);}
+.pngstick.st_cat_laptop {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_laptop.png);}
+.pngstick.st_cat_moustache {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_moustache.png);}
+.pngstick.st_cat_paper {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_paper.png);}
+.pngstick.st_cat_pirate {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_pirate.png);}
+.pngstick.st_cat_poo {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_poo.png);}
+.pngstick.st_cat_purr {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_purr.png);}
+.pngstick.st_cat_rascal {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_rascal.png);}
+.pngstick.st_cat_sing {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_sing.png);}
+.pngstick.st_cat_sleep {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_sleep.png);}
+.pngstick.st_cat_slippers {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_slippers.png);}
+.pngstick.st_cat_tied {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_tied.png);}
+.pngstick.st_cat_upsidedown {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_upsidedown.png);}
+.pngstick.st_cat_walk {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_walk.png);}
+.pngstick.st_cat_yarn {background-image: url(/local/components/khayr/answers/emoji/stickers/st_cat_yarn.png);}
+
+
+/* png stickers doggies */
+.pngstick.st_dog_ball_running {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_ball_running.png);}
+.pngstick.st_dog_barbell {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_barbell.png);}
+.pngstick.st_dog_bark {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_bark.png);}
+.pngstick.st_dog_birthday {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_birthday.png);}
+.pngstick.st_dog_bows {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_bows.png);}
+.pngstick.st_dog_boxer {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_boxer.png);}
+.pngstick.st_dog_chihuahua {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_chihuahua.png);}
+.pngstick.st_dog_cocktail {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_cocktail.png);}
+.pngstick.st_dog_corgi {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_corgi.png);}
+.pngstick.st_dog_dachshund {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_dachshund.png);}
+.pngstick.st_dog_dalmatian {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_dalmatian.png);}
+.pngstick.st_dog_einstein {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_einstein.png);}
+.pngstick.st_dog_fitness {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_fitness.png);}
+.pngstick.st_dog_haski {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_haski.png);}
+.pngstick.st_dog_hulahoop {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_hulahoop.png);}
+.pngstick.st_dog_labrador {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_labrador.png);}
+.pngstick.st_dog_pilot {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_pilot.png);}
+.pngstick.st_dog_poodle {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_poodle.png);}
+.pngstick.st_dog_pug {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_pug.png);}
+.pngstick.st_dog_rich {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_rich.png);}
+.pngstick.st_dog_russel {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_russel.png);}
+.pngstick.st_dog_saint_bernard {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_saint_bernard.png);}
+.pngstick.st_dog_sharpei {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_sharpei.png);}
+.pngstick.st_dog_shepherd {background-image: url(/local/components/khayr/answers/emoji/stickers/st_dog_shepherd.png);}
+
+
+/* png stickers nineties */
+.pngstick.st_nine_audio {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_audio.png);}
+.pngstick.st_nine_banki {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_banki.png);}
+.pngstick.st_nine_belomor {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_belomor.png);}
+.pngstick.st_nine_dendy {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_dendy.png);}
+.pngstick.st_nine_e {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_e.png);}
+.pngstick.st_nine_loveis {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_loveis.png);}
+.pngstick.st_nine_moloko {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_moloko.png);}
+.pngstick.st_nine_money {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_money.png);}
+.pngstick.st_nine_olymp {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_olymp.png);}
+.pngstick.st_nine_pepsi {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_pepsi.png);}
+.pngstick.st_nine_taxophone {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_taxophone.png);}
+.pngstick.st_nine_telek {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_telek.png);}
+.pngstick.st_nine_turbo {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_turbo.png);}
+.pngstick.st_nine_ula {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_ula.png);}
+.pngstick.st_nine_vidak {background-image: url(/local/components/khayr/answers/emoji/stickers/st_nine_vidak.png);}
+
+
+/* png stickers emoticons */
+.pngstick.st_emoticon_01_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_01_y.png);}
+.pngstick.st_emoticon_02_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_02_y.png);}
+.pngstick.st_emoticon_03_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_03_y.png);}
+.pngstick.st_emoticon_04_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_04_y.png);}
+.pngstick.st_emoticon_05_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_05_y.png);}
+.pngstick.st_emoticon_06_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_06_y.png);}
+.pngstick.st_emoticon_07_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_07_y.png);}
+.pngstick.st_emoticon_08_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_08_y.png);}
+.pngstick.st_emoticon_09_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_09_y.png);}
+.pngstick.st_emoticon_10_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_10_y.png);}
+.pngstick.st_emoticon_11_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_11_y.png);}
+.pngstick.st_emoticon_12_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_12_y.png);}
+.pngstick.st_emoticon_13_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_13_y.png);}
+.pngstick.st_emoticon_14_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_14_y.png);}
+.pngstick.st_emoticon_15_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_15_y.png);}
+.pngstick.st_emoticon_16_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_16_y.png);}
+.pngstick.st_emoticon_17_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_17_y.png);}
+.pngstick.st_emoticon_18_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_18_y.png);}
+.pngstick.st_emoticon_19_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_19_y.png);}
+.pngstick.st_emoticon_20_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_20_y.png);}
+.pngstick.st_emoticon_21_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_21_y.png);}
+.pngstick.st_emoticon_22_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_22_y.png);}
+.pngstick.st_emoticon_23_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_23_y.png);}
+.pngstick.st_emoticon_24_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_24_y.png);}
+.pngstick.st_emoticon_25_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_25_y.png);}
+.pngstick.st_emoticon_26_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_26_y.png);}
+.pngstick.st_emoticon_27_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_27_y.png);}
+.pngstick.st_emoticon_28_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_28_y.png);}
+.pngstick.st_emoticon_29_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_29_y.png);}
+.pngstick.st_emoticon_30_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_30_y.png);}
+.pngstick.st_emoticon_31_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_31_y.png);}
+.pngstick.st_emoticon_32_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_32_y.png);}
+.pngstick.st_emoticon_33_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_33_y.png);}
+.pngstick.st_emoticon_34_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_34_y.png);}
+.pngstick.st_emoticon_35_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_35_y.png);}
+.pngstick.st_emoticon_36_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_36_y.png);}
+.pngstick.st_emoticon_37_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_37_y.png);}
+.pngstick.st_emoticon_38_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_38_y.png);}
+.pngstick.st_emoticon_39_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_39_y.png);}
+.pngstick.st_emoticon_40_y {background-image: url(/local/components/khayr/answers/emoji/stickers/st_emoticon_40_y.png);}
+
+
+/* my picture */
+.mysmile.emoji241 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji1.png);}
+.mysmile.emoji242 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji2.png);}
+.mysmile.emoji243 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji3.png);}
+.mysmile.emoji244 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji4.png);}
+.mysmile.emoji245 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji5.png);}
+.mysmile.emoji246 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji6.png);}
+.mysmile.emoji247 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji7.png);}
+.mysmile.emoji248 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji8.png);}
+.mysmile.emoji249 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji9.png);}
+.mysmile.emoji2410 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji10.png);}
+.mysmile.emoji2411 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji11.png);}
+.mysmile.emoji2412 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji12.png);}
+.mysmile.emoji2413 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji13.png);}
+.mysmile.emoji2414 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji14.png);}
+.mysmile.emoji2415 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji15.png);}
+.mysmile.emoji2416 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji16.png);}
+.mysmile.emoji2417 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji17.png);}
+.mysmile.emoji2418 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji18.png);}
+.mysmile.emoji2419 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji19.png);}
+.mysmile.emoji2420 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji20.png);}
+.mysmile.emoji2421 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji21.png);}
+.mysmile.emoji2422 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji22.png);}
+.mysmile.emoji2423 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji23.png);}
+.mysmile.emoji2424 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji24.png);}
+.mysmile.emoji2425 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji25.png);}
+.mysmile.emoji2426 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji26.png);}
+.mysmile.emoji2427 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji27.png);}
+.mysmile.emoji2428 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji28.png);}
+.mysmile.emoji2429 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji29.png);}
+.mysmile.emoji2430 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji30.png);}
+.mysmile.emoji2431 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji31.png);}
+.mysmile.emoji2432 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji32.png);}
+.mysmile.emoji2433 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji33.png);}
+.mysmile.emoji2434 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji34.png);}
+.mysmile.emoji2435 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji35.png);}
+.mysmile.emoji2436 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji36.png);}
+.mysmile.emoji2437 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji37.png);}
+.mysmile.emoji2438 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji38.png);}
+.mysmile.emoji2439 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji39.png);}
+.mysmile.emoji2440 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji40.png);}
+.mysmile.emoji2441 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji41.png);}
+.mysmile.emoji2442 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji42.png);}
+.mysmile.emoji2443 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji43.png);}
+.mysmile.emoji2444 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji44.png);}
+.mysmile.emoji2445 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji45.png);}
+.mysmile.emoji2446 {background-image: url(/local/components/khayr/answers/emoji/myimages/24emoji46.png);}
+

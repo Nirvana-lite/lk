@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font: normal 16px/1.5 Helvetica, sans-serif;
+    background: linear-gradient(to right, #6814cd 0%, #3163f3 100%);
+}
+
+.tabs-panel p + div {
+    margin-top: 15px;
+}
+#mainText li a:hover {
+    text-decoration: none;
+}
+.media{
+    border-bottom: 2px double #F3F3F3;
+    margin-bottom: 20px;
+    padding: 20px 20px 0 20px;
+    background: #fefefe;
+}
+figcaption {
+    margin: 3px 0 3px;
+    font-size: 12px;
+}
+.prevText{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tabs li {
+        width: 100%;
+    }
+
+    .tabs li:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .tabs li a {
+        border-radius: 0;
+        opacity: 1;
+        top: 0;
+    }
+
+    .tabs li.active a::before {
+        content: "•";
+        padding-right: 5px;
+    }
+
+    .tabs-content {
+        border-radius: 0;
+    }
+}
+.hideMore{
+    display: none;
+}
+.imgAvatar{
+    width: 230px;
+    height: 230px;
+}
+.tabs {
+    position: relative; /* Относительное позиционирование */
+}
+.tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    margin-bottom: 0px;
+}
+.tab-title {
+    background: #e1e7f0; /* Цвет фона */
+    padding: 5px 10px; /* Поля вокруг текста */
+    border: 1px solid #666; /* Параметры рамки */
+    border-bottom: none; /* Снизу линию убираем */
+}
+.tab-content {
+    padding: 10px;
+}
+.tabs .tab {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #0d5b91;
+    font-size: 110%;
+}
+.tabs .tab:hover {
+    background: #0d5b91;
+    color: white;
+}
+.tabs .tab.viewed {
+    background: #0d5b91;
+    color: white;
+}
+
+.item{
+    padding: 10px;
+    margin-bottom: 20px;
+    background: white;
+    width: 850px;
+}
+.item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.item .info{
+    font-size: 90%;
+    color: gray;
+}
+.info .autor, .info .link {
+    margin-top: 15px;
+}
+#articles .item h2{
+    margin-block-start: 0;
+}
+.new_btn {
+    margin-bottom: 15px;
+    padding-left: 0px !important;
+}
+.new_btn a {
+    font-size: 20px;
+}

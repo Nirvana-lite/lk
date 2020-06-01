@@ -1,0 +1,240 @@
+.list_social {
+	font-family: Lora, serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;	
+}
+
+.list_social > div > a{
+	display:block;
+	text-decoration:none;
+	padding:0px !important;
+	height: 95%;
+	background: #eee !important;	
+}
+
+.section_img {
+	margin: 15px 0 15px 0;	
+	overflow: hidden;
+}
+.section_img h1{
+    float: left;
+	width:90%;
+}
+.section_img img{
+	vertical-align: middle;
+	float: left;
+}
+.section_img:before,.section_img:after {content: " "; display: table;}
+.section_img:after{clear: both;}
+
+
+
+
+
+
+
+
+
+
+
+
+.stats{
+	background: #eee;
+    padding: 8px;
+    position: relative;
+    display: block;
+    width: 100%;
+    float: left;
+}
+.stats-box{
+	float:left;
+	margin-right:10px;
+	font-size: 14px;
+}
+.stats-box .icon-eye{
+	
+}
+.stats-box .icon-bubbles4{
+    color: green;
+}
+.stats-box .icon-file-text2{
+	color: red;
+}
+.stats-box .icon-stats-bars2{
+	color: black;	
+}
+.img-media{text-align:center;}
+.img-soc-pro {
+    width: 82px;
+    height: 80px;
+}
+.media-box{
+    padding: 4px;
+    margin-bottom: 10px;
+    height: 150px;
+}
+.block-det{
+	background: white;
+}
+
+.block-det .text{
+	font-size:14px;
+}
+
+.block-det h2 {
+    background: #eee;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 10px 5px;
+}
+.block-det p.text-niz{
+	margin: 0;
+    padding: 5px 10px 5px 5px;
+	background: #eee;
+	color:black;
+	text-align:right;
+}
+.program-box:hover {
+	border: 1px solid rgba(48, 163, 189, 0.52);
+}
+.program-box:hover .stats, .program-box:hover h2, .program-box:hover, .program-box:hover p.text-niz{
+	background:rgba(48, 163, 189, 0.52);
+}
+.program-box:hover h2 {
+    color: black;
+}
+
+.block-det .line-white{
+	height:20px;
+	background:white;
+}
+
+/* icon */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('iconfonts/icomoon.eot?w5unvo');
+  src:  url('iconfonts/icomoon.eot?w5unvo#iefix') format('embedded-opentype'),
+    url('iconfonts/icomoon.ttf?w5unvo') format('truetype'),
+    url('iconfonts/icomoon.woff?w5unvo') format('woff'),
+    url('iconfonts/icomoon.svg?w5unvo#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 14px;
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-file-text2:before {
+  content: "\e926";
+}
+.icon-bubble2:before {
+  content: "\e96e";
+}
+.icon-bubbles4:before {
+  content: "\e970";
+}
+.icon-pie-chart:before {
+  content: "\e99a";
+}
+.icon-stats-bars2:before {
+  content: "\e99d";
+}
+.icon-eye:before {
+  content: "\e9ce";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+
+/* animated */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+@keyframes rollIn {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rollIn {
+  animation-name: rollIn;
+}
+
+
+@media (min-width: 992px) { 
+
+	.list_social > div {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+}
+

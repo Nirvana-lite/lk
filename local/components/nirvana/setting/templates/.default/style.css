@@ -1,0 +1,95 @@
+.imgAvatar{
+    width: 230px;
+    height: 230px;
+}
+.tabs {
+    position: relative; /* Относительное позиционирование */
+}
+.tab, .tab-title {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    margin-bottom: 0px;
+}
+.tab input[type="radio"] { display: none; }
+.tab-title {
+    background: #e1e7f0; /* Цвет фона */
+    padding: 5px 10px; /* Поля вокруг текста */
+    border: 1px solid #666; /* Параметры рамки */
+    border-bottom: none; /* Снизу линию убираем */
+}
+.tab-content {
+    position: absolute; /* Абсолютное позиционирование */
+    border: 1px solid #666; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+    left: 0; /* Размещаем у левого края */
+    width: calc(100% - 20px); /* Ширина содержимого */
+    display: none; /* Прячем вкладку */
+    background: white;
+}
+.tab :checked + .tab-title {
+    position: relative; /* Относительное позиционирование */
+    background: #fff; /* Цвет фона */
+    top: 1px; /* Сдвигаем вниз */
+    z-index: 1; /* Отображаем поверх содержимого */
+}
+.tab :checked ~ .tab-content {
+    display: block; /* Показываем активную вкладку */
+}
+.tabs {
+    position: relative;
+    width: -webkit-fill-available;
+}
+.answer {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 999999999;
+    text-align: center;
+    line-height: 40px;
+}
+.answer.done{
+    background: #0B690B;
+    color: white;
+}
+.answer.error{
+    background: crimson;
+    color: white;
+}
+
+
+.real-hint {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    z-index: 99999;
+}
+.real-hint .top-hint {
+    position: relative;
+}
+.editor_avatars {
+    width: 364px;
+}
+.editor_avatars .avatar {
+    display: inline-block;
+}
+.editor_avatars .avatar label {
+    border: 2px solid transparent;
+    display: block;
+    padding: 2px;
+}
+.editor_avatars .avatar img {
+    width: 46px;
+    height: 100%;
+    display: block;
+}
+
+textarea#doposebe{
+	height: 252px;
+	resize: none;
+}

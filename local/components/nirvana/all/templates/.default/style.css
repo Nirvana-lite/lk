@@ -1,0 +1,89 @@
+.blocks{
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+.blocks .left_tab {
+    display: block;
+    height: 30px;
+}
+.blocks .left_tab div {
+    position: absolute;
+    left: 0px;
+    background: #fbf3c7;
+    padding: 3px 5px;
+}
+
+.blocks .media {
+    margin-top: 0px;
+    /*font-size: 13px;*/
+}
+.blocks .detail_button {
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 4px;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+}
+
+.blocks .detail_info {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-auto-rows: auto;
+    grid-gap: .5em;
+}
+.blocks .detail_info .info{
+    font-size: 12px;
+    color: gray;
+}
+.blocks .prev_info {
+    display: grid;
+    /*grid-template-columns: 9fr 3fr;*/
+    font-family: sans-serif;
+}
+.blocks .prev_info span{
+    font-size: 80%;
+    color: gray;
+}
+.blocks .btn-wrap {
+    align-self: end;
+}
+.blocks .left_block div {
+    padding-bottom: 3px;
+}
+.blocks .panel-body {
+    padding: 10px;
+}
+.blocks .panel{
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.blocks .inf{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin-top: 10px;
+}
+
+.blocks.letter {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+}
+.blocks.letter .left_block span {
+    font-size: 90%;
+    color: gray;
+}
+.blocks.letter .left_block .date {
+    font-size: 90%;
+}
+
+.blocks.letter .prev_text{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.blocks.letter .detail_text{
+}

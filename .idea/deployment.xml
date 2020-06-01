@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" promptOnRemoteOverwrite="CHECK_TIMESTAMP" serverName="jur24pro" autoUploadExternalChanges="true" compareModeInSync="TIMESTAMP">
+    <serverData>
+      <paths name="jur24pro">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/bitrix" />
+            <excludedPath path="/upload" />
+            <excludedPath path="/local/components/componentmanager" />
+            <excludedPath path="/local/components/khayr" />
+            <excludedPath path="/local/components/mycomponents" />
+            <excludedPath path="/local/datagorod" />
+            <excludedPath path="/local/gadgets" />
+            <excludedPath path="/local/img" />
+            <excludedPath path="/local/include" />
+            <excludedPath path="/local/js" />
+            <excludedPath path="/local/php_interface" />
+            <excludedPath path="/data" />
+            <excludedPath path="/sitemap.xml" />
+            <excludedPath path="/sitemapfiles.xml" />
+            <excludedPath path="/sitemapforum1.xml" />
+            <excludedPath path="/sitemapforum124.xml" />
+            <excludedPath path="/sitemapforum125.xml" />
+            <excludedPath path="/sitemapforum126.xml" />
+            <excludedPath path="/sitemapforum127.xml" />
+            <excludedPath path="/sitemapforum128.xml" />
+            <excludedPath path="/sitemapforum129.xml" />
+            <excludedPath path="/sitemapforum130.xml" />
+            <excludedPath path="/sitemapforum131.xml" />
+            <excludedPath path="/sitemapforum132.xml" />
+            <excludedPath path="/sitemapforum133.xml" />
+            <excludedPath path="/sitemapforum134.xml" />
+            <excludedPath path="/sitemapforum135.xml" />
+            <excludedPath path="/sitemapforum136.xml" />
+            <excludedPath path="/sitemapforum137.xml" />
+            <excludedPath path="/sitemapforum138.xml" />
+            <excludedPath path="/sitemapforum139.xml" />
+            <excludedPath path="/sitemapforum140.xml" />
+            <excludedPath path="/sitemapforum141.xml" />
+            <excludedPath path="/sitemapforum142.xml" />
+            <excludedPath path="/sitemapforum143.xml" />
+            <excludedPath path="/sitemapforum144.xml" />
+            <excludedPath path="/sitemapforum145.xml" />
+            <excludedPath path="/sitemapforum146.xml" />
+            <excludedPath path="/sitemapforum147.xml" />
+            <excludedPath path="/sitemapforum148.xml" />
+            <excludedPath path="/sitemapforum149.xml" />
+            <excludedPath path="/sitemapforum150.xml" />
+            <excludedPath path="/sitemapforum151.xml" />
+            <excludedPath path="/sitemapforum152.xml" />
+            <excludedPath path="/sitemapforum153.xml" />
+            <excludedPath path="/sitemapforum154.xml" />
+            <excludedPath path="/sitemapforum155.xml" />
+            <excludedPath path="/sitemapforum156.xml" />
+            <excludedPath path="/sitemapforum157.xml" />
+            <excludedPath path="/sitemapforum158.xml" />
+            <excludedPath path="/sitemapforum159.xml" />
+            <excludedPath path="/sitemapforum160.xml" />
+            <excludedPath path="/sitemapforum161.xml" />
+            <excludedPath path="/sitemapforum162.xml" />
+            <excludedPath path="/sitemapforum163.xml" />
+            <excludedPath path="/sitemapforum164.xml" />
+            <excludedPath path="/sitemapforum165.xml" />
+            <excludedPath path="/sitemapforum166.xml" />
+            <excludedPath path="/sitemapforum167.xml" />
+            <excludedPath path="/sitemapforum168.xml" />
+            <excludedPath path="/sitemapforum169.xml" />
+            <excludedPath path="/sitemapforum170.xml" />
+            <excludedPath path="/sitemapforum171.xml" />
+            <excludedPath path="/sitemapforum172.xml" />
+            <excludedPath path="/sitemapforum173.xml" />
+            <excludedPath path="/sitemapforum174.xml" />
+            <excludedPath path="/sitemapforum175.xml" />
+            <excludedPath path="/sitemapforum176.xml" />
+            <excludedPath path="/sitemapforum177.xml" />
+            <excludedPath path="/sitemapforum178.xml" />
+            <excludedPath path="/sitemapforum179.xml" />
+            <excludedPath path="/sitemapforum180.xml" />
+            <excludedPath path="/sitemapforum181.xml" />
+            <excludedPath path="/sitemapforum182.xml" />
+            <excludedPath path="/sitemapforum183.xml" />
+            <excludedPath path="/sitemapforum184.xml" />
+            <excludedPath path="/sitemapforum185.xml" />
+            <excludedPath path="/sitemapforum186.xml" />
+            <excludedPath path="/sitemapforum187.xml" />
+            <excludedPath path="/sitemapforum188.xml" />
+            <excludedPath path="/sitemapiblock12.xml" />
+            <excludedPath path="/sitemapiblock15.xml" />
+            <excludedPath path="/sitemapiblock17.xml" />
+            <excludedPath path="/sitemapiblock19.xml" />
+            <excludedPath path="/sitemapiblock2.xml" />
+            <excludedPath path="/sitemapiblock20.xml" />
+            <excludedPath path="/sitemapiblock21.xml" />
+            <excludedPath path="/sitemapiblock24.xml" />
+            <excludedPath path="/sitemapiblock26.xml" />
+            <excludedPath path="/sitemapiblock27.xml" />
+            <excludedPath path="/sitemapiblock28.xml" />
+            <excludedPath path="/sitemapiblock29.xml" />
+            <excludedPath path="/sitemapiblock33.part1.xml" />
+            <excludedPath path="/sitemapiblock33.part2.xml" />
+            <excludedPath path="/sitemapiblock33.part3.xml" />
+            <excludedPath path="/sitemapiblock33.part4.xml" />
+            <excludedPath path="/sitemapiblock33.xml" />
+            <excludedPath path="/sitemapiblock35.xml" />
+            <excludedPath path="/sitemapiblock40.xml" />
+            <excludedPath path="/sitemapiblock41.xml" />
+            <excludedPath path="/sitemapiblock43.xml" />
+            <excludedPath path="/sitemapiblock54.xml" />
+            <excludedPath path="/sitemapiblock55.xml" />
+            <excludedPath path="/sitemapiblock56.xml" />
+            <excludedPath path="/sitemapiblock57.xml" />
+            <excludedPath path="/sitemapiblock58.xml" />
+            <excludedPath path="/sitemapiblock59.xml" />
+            <excludedPath path="/sitemapiblock60.xml" />
+            <excludedPath path="/sitemapiblock61.xml" />
+            <excludedPath path="/sitemapiblock62.xml" />
+            <excludedPath path="/img" />
+            <excludedPath path="/temps" />
+            <excludedPath path="/test" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>
