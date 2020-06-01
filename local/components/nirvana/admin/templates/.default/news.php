@@ -80,6 +80,11 @@ $this->setFrameMode(true);
 
 <div class="row" id="lk" v-cloak>
     <main id="mainText" class="main col-md-9">
+        <?$APPLICATION->IncludeComponent(
+            "nirvana:form.mini",
+            "",
+            Array()
+        ); ?>
     </main>
     <div class="col-md-3">
         <sidebar></sidebar>
